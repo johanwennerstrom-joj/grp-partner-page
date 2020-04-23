@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import Button from '../components/Button/index'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -12,6 +13,7 @@ const IndexPage = () => (
       Try putting something here just for git practice if you need it! And if i
       think you have behaved well i will merge it!
     </h2>
+    <Button />
   </Layout>
 )
 
