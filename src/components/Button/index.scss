@@ -1,0 +1,6 @@
+// Note that the @import will not be supported for that much longer. But I have to read up on it's replacement
+@import "../../global/variables.scss";
+
+button {
+  background-color: $forestGreen;
+}
