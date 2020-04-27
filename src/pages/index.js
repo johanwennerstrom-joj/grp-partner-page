@@ -1,14 +1,26 @@
 import React from "react"
 import { Link } from "gatsby"
-import Button from "../components/Button/index"
 
+// Data
+import Data from "../data/partners.json"
+
+// Components
+import Button from "../components/Button/index"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const IndexPage = () => {
-  // Added a test function to the click for demonstrational purposes
+  // Destructuring JSON data
+  const { partners } = Data
+
+  // Start of a filter function.
+  // const filter = (data, query) => {
+  //   data.filter(`${query}`)
+  // }
+
+  // handeClick now prints all partner to console
   const handleClick = () => {
-    alert("Button was clicked")
+    console.log(partners)
   }
   return (
     <Layout>
