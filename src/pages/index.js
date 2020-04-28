@@ -1,15 +1,35 @@
 import React from "react"
 import { Link } from "gatsby"
-import Button from "../components/Button/index"
 
+// Data
+import Data from "../data/partners.json"
+
+// Components
+import Button from "../components/Button/index"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const IndexPage = () => {
-  // Added a test function to the click for demonstrational purposes
-  const handleClick = () => {
-    alert("Button was clicked")
+  // Destructuring JSON data
+  const { partners } = Data
+
+  // Start of a filter function.
+  const filter = (data, query) => {
+    const queryTrue = []
+    const queryFalse = []
+    data.map(item => {
+      item.workingRegion.includes(`${query}`)
+        ? queryTrue.push(item)
+        : queryFalse.push(item)
+    })
+    console.log(queryTrue, queryFalse)
   }
+
+  // handeClick now prints all partner to console
+  const handleClick = () => {
+    filter(partners, "Africa")
+  }
+
   return (
     <Layout>
       <SEO title="Home" />
