@@ -5,11 +5,8 @@ import { useStaticQuery, graphql } from "gatsby"
 const Layout = ({ children }) => {
   return (
     <>
-      <main>
-        {" "}
-        <NavBar />
-        {children}
-      </main>
+      <NavBar />
+      <main>{children}</main>
     </>
   )
 }
