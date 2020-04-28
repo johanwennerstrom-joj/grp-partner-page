@@ -39,7 +39,6 @@ const IndexPage = () => {
         Try putting something here just for git practice if you need it! And if
         i think you have behaved well i will merge it!
       </h2>
-      <Button clicked={handleClick} />
     </Layout>
   )
 }
