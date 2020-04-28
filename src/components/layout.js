@@ -7,12 +7,17 @@ import { useStaticQuery, graphql } from "gatsby"
 const Layout = ({ children }) => {
   return (
     <>
+
+      <NavBar />
+      <main>{children}</main>
+=======
       <main>
         {" "}
         <NavBar />
         <Header button={<Button />} />
         {children}
       </main>
+
     </>
   )
 }
