@@ -14,7 +14,7 @@ const IndexPage = () => {
   const { partners } = Data
 
   // Start of a filter function.
-  const filter = (data, query1, query2) => {
+  const filter = (data, query1) => {
     const queryTrue = []
     const queryFalse = []
 
@@ -23,11 +23,12 @@ const IndexPage = () => {
         ? queryTrue.push(item)
         : queryFalse.push(item)
     })
+    console.log(queryTrue, queryFalse)
   }
 
   // handeClick now prints all partner to console
   const handleClick = () => {
-    filter(partners, "Asia")
+    filter(partners, "Europe")
   }
 
   return (

@@ -1,11 +1,15 @@
 import React from "react"
-
+import NavBar from "./NavBar/index"
 import { useStaticQuery, graphql } from "gatsby"
 
 const Layout = ({ children }) => {
   return (
     <>
-      <main>{children}</main>
+      <main>
+        {" "}
+        <NavBar />
+        {children}
+      </main>
     </>
   )
 }
