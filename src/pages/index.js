@@ -14,20 +14,20 @@ const IndexPage = () => {
   const { partners } = Data
 
   // Start of a filter function.
-  const filter = (data, query) => {
+  const filter = (data, query1, query2) => {
     const queryTrue = []
     const queryFalse = []
+
     data.map(item => {
-      item.workingRegion.includes(`${query}`)
+      item.workingRegion.includes(`${query1}`)
         ? queryTrue.push(item)
         : queryFalse.push(item)
     })
-    console.log(queryTrue, queryFalse)
   }
 
   // handeClick now prints all partner to console
   const handleClick = () => {
-    filter(partners, "Africa")
+    filter(partners, "Asia")
   }
 
   return (
