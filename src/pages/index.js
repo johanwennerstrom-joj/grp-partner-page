@@ -5,9 +5,9 @@ import { Link } from "gatsby"
 import Data from "../data/partners.json"
 
 // Components
-import Button from "../components/Button/index"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import PartnerCard from "../components/PartnerCard/index"
 
 const IndexPage = () => {
   // Destructuring JSON data
@@ -32,11 +32,8 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      <h2>Hey, made a pull request from the command line! </h2>
-      <h2>
-        Try putting something here just for git practice if you need it! And if
-        i think you have behaved well i will merge it!
-      </h2>
+      {/* Hardcoded just as an example */}
+      <PartnerCard type="Zurich" theme="Private" hq="Switzerland" workingRegion="Global" website="www.zurich.com" />
     </Layout>
   )
 }
