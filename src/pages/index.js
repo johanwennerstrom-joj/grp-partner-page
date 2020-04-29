@@ -10,7 +10,8 @@ import SEO from "../components/seo"
 
 const IndexPage = () => {
   //state, setQuery changes state. We will use it with the buttonrow
-  const [query, setQuery] = useState("Global")
+  const [query, setQuery] = useState("Asia")
+  const [test, setTest] = useState("")
 
   // Destructuring JSON data
   const { partners } = Data
@@ -22,24 +23,19 @@ const IndexPage = () => {
 
     data.map(item => {
       const { workingRegion } = item
-      workingRegion.includes(`${query1}`)
+      return workingRegion.includes(`${query1}`)
         ? queryTrue.push(item)
         : queryFalse.push(item)
     })
-    console.log(queryTrue, queryFalse)
+    return setTest(queryTrue)
   }
   useEffect(() => {
     filter(partners, query)
-  })
-
+  }, [])
+  console.log(test[1].workingRegion)
   return (
     <Layout>
       <SEO title="Home" />
-      <h2>Hey, made a pull request from the command line! </h2>
-      <h2>
-        Try putting something here just for git practice if you need it! And if
-        i think you have behaved well i will merge it!
-      </h2>
     </Layout>
   )
 }
