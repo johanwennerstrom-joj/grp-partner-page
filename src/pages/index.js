@@ -5,11 +5,13 @@ import { Link } from "gatsby"
 import Data from "../data/partners.json"
 
 // Components
-import Button from "../components/Button/index"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const IndexPage = () => {
+  //state, setQuery changes state. We will use it with the buttonrow
+  const [query, setQuery] = useState("Global")
+
   // Destructuring JSON data
   const { partners } = Data
 
@@ -19,14 +21,15 @@ const IndexPage = () => {
     const queryFalse = []
 
     data.map(item => {
-      item.workingRegion.includes(`${query1}`)
+      const { workingRegion } = item
+      workingRegion.includes(`${query1}`)
         ? queryTrue.push(item)
         : queryFalse.push(item)
     })
     console.log(queryTrue, queryFalse)
   }
   useEffect(() => {
-    filter(partners, "Europe")
+    filter(partners, query)
   })
 
   return (
