@@ -11,7 +11,7 @@ const PartnerCard = (props) => {
             <h3>Theme:{props.theme}</h3>
             <h3>Headquarters:{props.hq}</h3>
             <h3>Working Region:{props.workingRegion}</h3>
-            <Link to={props.website}>WEBSITE{props.website}</Link>
+            <a href={props.website} target="_blank">WEBSITE{props.website}</a>
         </>
     )
 }
