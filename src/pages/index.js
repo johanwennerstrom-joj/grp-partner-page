@@ -37,16 +37,9 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      {/* Hardcoded just as an example */}
-      {/* <PartnerCard
-        type="Zurich"
-        theme="Private"
-        hq="Switzerland"
-        workingRegion="Global"
-        website="www.zurich.com"
-      /> */}
 
-      {test.map(item => {
+
+      {partners.map(item => {
         return (
           <PartnerCard
             type={item.type}
