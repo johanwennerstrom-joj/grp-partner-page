@@ -46,7 +46,7 @@ const IndexPage = () => {
         website="www.zurich.com"
       /> */}
 
-      {partners.map(item => {
+      {test.map(item => {
         return (
           <PartnerCard
             type={item.type}
