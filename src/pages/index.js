@@ -7,6 +7,7 @@ import Data from "../data/partners.json"
 // Components
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import PartnerCard from "../components/PartnerCard/index"
 
 const IndexPage = () => {
   //state, setQuery changes state. We will use it with the buttonrow
@@ -32,10 +33,31 @@ const IndexPage = () => {
   useEffect(() => {
     filter(partners, query)
   }, [])
-  console.log(test[1].workingRegion)
+
   return (
     <Layout>
       <SEO title="Home" />
+      {/* Hardcoded just as an example */}
+      {/* <PartnerCard
+        type="Zurich"
+        theme="Private"
+        hq="Switzerland"
+        workingRegion="Global"
+        website="www.zurich.com"
+      /> */}
+
+      {partners.map(item => {
+        return (
+          <PartnerCard
+            type={item.type}
+            theme={item.themes}
+            hq={item.hq}
+            workingRegion={item.workingRegion}
+            website={item.website}
+            key={item.id}
+          />
+        )
+      })}
     </Layout>
   )
 }
