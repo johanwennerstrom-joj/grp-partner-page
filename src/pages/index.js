@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import { Link } from "gatsby"
 
 // Data
@@ -25,11 +25,9 @@ const IndexPage = () => {
     })
     console.log(queryTrue, queryFalse)
   }
-
-  // handeClick now prints all partner to console
-  const handleClick = () => {
+  useEffect(() => {
     filter(partners, "Europe")
-  }
+  })
 
   return (
     <Layout>
