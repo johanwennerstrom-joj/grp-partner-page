@@ -45,6 +45,7 @@ const IndexPage = () => {
         {filtered.map(item => {
           return (
             <PartnerCard
+              image={item.image}
               organisation={item.organisation}
               type={item.type}
               theme={item.themes}
