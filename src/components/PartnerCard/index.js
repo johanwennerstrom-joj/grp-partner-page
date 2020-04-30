@@ -5,7 +5,7 @@ import "./index.scss"
 const PartnerCard = props => {
   return (
     <>
-      <img src={props.image} alt={props.alt} />
+      <img loading="lazy" src={props.image} alt={props.alt} />
       <h3>Type:{props.type}</h3>
       <h3>Theme:{props.theme}</h3>
       <h3>Headquarters:{props.hq}</h3>
