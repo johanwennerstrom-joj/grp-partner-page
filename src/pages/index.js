@@ -37,9 +37,6 @@ const IndexPage = () => {
     filter(partners)
   }, [])
 
-  // filtered.map(partner => {
-  //   return console.log(partner)
-  // })
   return (
     <Layout>
       <SEO title="Home" />
