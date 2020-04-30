@@ -5,19 +5,14 @@ import NavBar from "./NavBar/index"
 import Header from "./Header/index"
 import Button from "./Button/index"
 
-
 const Layout = ({ children }) => {
-
   return (
     <>
       <main>
         {" "}
-
         <NavBar />
         <Header button={<Button />} />
         {children}
-
-
       </main>
     </>
   )
