@@ -6,7 +6,7 @@ const NavBar = () => {
     <nav>
 
       <Link to="/404">About Us</Link>
-      <Link to="/404">Join Us!</Link>
+      <Link to="/joinus">Join Us!</Link>
       <Link to="/404">Challenges</Link>
       <Link to="/404">News</Link>
       <Link to="/404">Events</Link>
