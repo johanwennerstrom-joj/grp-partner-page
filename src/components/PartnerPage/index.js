@@ -1,8 +1,10 @@
 import React from "react"
 
-const PartnerPage = () => {
+const PartnerPage = (props) => {
     return (
+        //Carousel component goes here
         <>
+            <h2>Vision: {props.vision}</h2>
         </>
     )
 }
