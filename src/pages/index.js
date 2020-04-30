@@ -11,37 +11,41 @@ import PartnerCard from "../components/PartnerCard/index"
 import CardContainer from "../components/CardContainer/index"
 
 const IndexPage = () => {
-  //state, setQuery changes state. We will use it with the buttonrow
-  const [query, setQuery] = useState("Europe")
-  const [test, setTest] = useState("")
-
   // Destructuring JSON data
-
   const { partners } = Data
 
-  // Start of a filter function.
-  const filter = (data, query1) => {
+  // State
+  const [sort, setSort] = useState("workingRegion")
+  const [query, setQuery] = useState("Africa")
+  const [filtered, setFiltered] = useState([])
+  const [unfiltered, setUnfiltered] = useState([])
+
+  const filter = data => {
     const queryTrue = []
     const queryFalse = []
 
     data.map(item => {
-      const { workingRegion } = item
-      workingRegion.includes(`${query1}`)
+      item[sort].includes(`${query}`)
         ? queryTrue.push(item)
         : queryFalse.push(item)
     })
-    return setTest(queryTrue)
+    setFiltered(queryTrue)
+    setUnfiltered(queryFalse)
   }
+
   useEffect(() => {
-    filter(partners, query)
+    filter(partners)
   }, [])
 
+  // filtered.map(partner => {
+  //   return console.log(partner)
+  // })
   return (
     <Layout>
       <SEO title="Home" />
 
       <CardContainer>
-        {partners.map(item => {
+        {filtered.map(item => {
           return (
             <PartnerCard
               organisation={item.organisation}
@@ -51,6 +55,24 @@ const IndexPage = () => {
               workingRegion={item.workingRegion}
               website={item.website}
               key={item.id}
+            />
+          )
+        })}
+      </CardContainer>
+
+      <h1>Separation Line</h1>
+      <CardContainer>
+        {unfiltered.map(item => {
+          return (
+            <PartnerCard
+              organisation={item.organisation}
+              type={item.type}
+              theme={item.themes}
+              hq={item.hq}
+              workingRegion={item.workingRegion}
+              website={item.website}
+              key={item.id}
+              image={item.image}
             />
           )
         })}
