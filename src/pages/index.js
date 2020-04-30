@@ -39,15 +39,8 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      {/* Hardcoded just as an example */}
-      {/* <PartnerCard
-        type="Zurich"
-        theme="Private"
-        hq="Switzerland"
-        workingRegion="Global"
-        website="www.zurich.com"
-      /> */}
 
+<<<<<<< HEAD
       <CardContainer>
         {partners.map(item => {
           return (
@@ -62,6 +55,21 @@ const IndexPage = () => {
           )
         })}
       </CardContainer>
+=======
+
+      {partners.map(item => {
+        return (
+          <PartnerCard
+            type={item.type}
+            theme={item.themes}
+            hq={item.hq}
+            workingRegion={item.workingRegion}
+            website={item.website}
+            key={item.id}
+          />
+        )
+      })}
+>>>>>>> 19127f07bd22de0960c839cadc4c77ac9aee96c7
     </Layout>
   )
 }
