@@ -11,7 +11,7 @@ const Layout = ({ children }) => {
       <main>
         {" "}
         <NavBar />
-        <Header button={<Button clicked={"/joinus"} />} />
+        <Header button={<Button />} />
         {children}
       </main>
     </>
