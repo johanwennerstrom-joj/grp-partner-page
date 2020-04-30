@@ -39,14 +39,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      {/* Hardcoded just as an example */}
-      {/* <PartnerCard
-        type="Zurich"
-        theme="Private"
-        hq="Switzerland"
-        workingRegion="Global"
-        website="www.zurich.com"
-      /> */}
+
 
       <CardContainer>
         {partners.map(item => {
@@ -62,6 +55,7 @@ const IndexPage = () => {
           )
         })}
       </CardContainer>
+
     </Layout>
   )
 }

@@ -10,7 +10,7 @@ const PartnerCard = props => {
       <h3>Headquarters:{props.hq}</h3>
       <h3>Working Region:{props.workingRegion}</h3>
       <a href={props.website} target="_blank" rel="noopener noreferrer">
-        WEBSITE{props.website}
+        WEBSITE
       </a>
     </>
   )
