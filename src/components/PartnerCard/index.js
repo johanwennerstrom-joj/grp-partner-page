@@ -6,6 +6,7 @@ const PartnerCard = props => {
   return (
     <>
       <ul>
+        <logo>{props.image}</logo>
         <h2>{props.organisation}</h2>
         <p>Type:{props.type}</p>
         <p>Theme:{props.theme}</p>
