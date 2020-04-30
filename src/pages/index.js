@@ -69,6 +69,7 @@ const IndexPage = () => {
               workingRegion={item.workingRegion}
               website={item.website}
               key={item.id}
+              image={item.image}
             />
           )
         })}
