@@ -45,6 +45,7 @@ const IndexPage = () => {
         {partners.map(item => {
           return (
             <PartnerCard
+              organisation={item.organisation}
               type={item.type}
               theme={item.themes}
               hq={item.hq}
