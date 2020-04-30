@@ -8,7 +8,7 @@ import Data from "../data/partners.json"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import PartnerCard from "../components/PartnerCard/index"
-import CardContainer from "../components/Card contanier/index"
+import CardContainer from "../components/CardContainer/index"
 
 
 const IndexPage = () => {
