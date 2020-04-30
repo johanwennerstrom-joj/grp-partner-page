@@ -8,12 +8,9 @@ import Button from "./Button/index"
 const Layout = ({ children }) => {
   return (
     <>
-      <main>
-        {" "}
-        <NavBar />
-        <Header button={<Button />} />
-        {children}
-      </main>
+      <NavBar />
+      <main> {children}</main>
+      <Header button={<Button />} />
     </>
   )
 }
