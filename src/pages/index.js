@@ -10,13 +10,13 @@ import SEO from "../components/seo"
 import PartnerCard from "../components/PartnerCard/index"
 import CardContainer from "../components/Card contanier/index"
 
-
 const IndexPage = () => {
   //state, setQuery changes state. We will use it with the buttonrow
-  const [query, setQuery] = useState("Asia")
+  const [query, setQuery] = useState("Europe")
   const [test, setTest] = useState("")
 
   // Destructuring JSON data
+
   const { partners } = Data
 
   // Start of a filter function.
@@ -26,7 +26,7 @@ const IndexPage = () => {
 
     data.map(item => {
       const { workingRegion } = item
-      return workingRegion.includes(`${query1}`)
+      workingRegion.includes(`${query1}`)
         ? queryTrue.push(item)
         : queryFalse.push(item)
     })
