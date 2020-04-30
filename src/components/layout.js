@@ -9,8 +9,8 @@ const Layout = ({ children }) => {
   return (
     <>
       <NavBar />
-      <main> {children}</main>
       <Header button={<Button />} />
+      <main> {children}</main>
     </>
   )
 }
