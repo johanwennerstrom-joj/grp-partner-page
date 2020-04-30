@@ -4,7 +4,7 @@ import "./index.scss"
 const CardContainer = ({ children }) => {
   return (
     <>
-      <div className="">{children}</div>
+      <div className="card-cotanier">{children}</div>
     </>
   )
 }
