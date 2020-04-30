@@ -8,6 +8,8 @@ import Data from "../data/partners.json"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import PartnerCard from "../components/PartnerCard/index"
+import CardContainer from "../components/Card contanier/index"
+
 
 const IndexPage = () => {
   //state, setQuery changes state. We will use it with the buttonrow
@@ -39,18 +41,21 @@ const IndexPage = () => {
       <SEO title="Home" />
 
 
-      {partners.map(item => {
-        return (
-          <PartnerCard
-            type={item.type}
-            theme={item.themes}
-            hq={item.hq}
-            workingRegion={item.workingRegion}
-            website={item.website}
-            key={item.id}
-          />
-        )
-      })}
+      <CardContainer>
+        {partners.map(item => {
+          return (
+            <PartnerCard
+              type={item.type}
+              theme={item.themes}
+              hq={item.hq}
+              workingRegion={item.workingRegion}
+              website={item.website}
+              key={item.id}
+            />
+          )
+        })}
+      </CardContainer>
+
     </Layout>
   )
 }
