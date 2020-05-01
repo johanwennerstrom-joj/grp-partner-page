@@ -1,19 +1,6 @@
 {
   "partners": [
     {
-      "_id": "5e8e15bd6fd5ae29bb083be2",
-      "organisation": "Z Zurich Foundation",
-      "website": "https://www.zurich.com/en/sustainability/investing-in-communities/z-zurich-foundation",
-      "themes": "private sector and investment; disaster risk reduction",
-      "type": "Private Sector",
-      "workingRegion": "Global",
-      "hq": "Switzerland",
-      "vision": "N/A",
-      "image": "https://res.cloudinary.com/mojojawn/image/upload/v1587994491/grp_partners/Zurich_stac_R_rgb_tbdhmr.png",
-      "alt": " ",
-      "__v": 0
-    },
-    {
       "_id": "5e8e19ec6fd5ae29bb083be3",
       "organisation": "Africa Sustainability Centre (ASCENT)",
       "website": "http://africasustainability.org/",
@@ -699,6 +686,19 @@
       "hq": "N/A",
       "vision": "A world where wetlands are treasured and nurtured for their beauty, the life they support and the resources they provide.",
       "image": "https://res.cloudinary.com/mojojawn/image/upload/v1587994491/grp_partners/world-ocean-council-e1506200675198_ujr695.png",
+      "alt": " ",
+      "__v": 0
+    },
+    {
+      "_id": "5e8e15bd6fd5ae29bb083be2",
+      "organisation": "Z Zurich Foundation",
+      "website": "https://www.zurich.com/en/sustainability/investing-in-communities/z-zurich-foundation",
+      "themes": "private sector and investment; disaster risk reduction",
+      "type": "Private Sector",
+      "workingRegion": "Global",
+      "hq": "Switzerland",
+      "vision": "N/A",
+      "image": "https://res.cloudinary.com/mojojawn/image/upload/v1587994491/grp_partners/Zurich_stac_R_rgb_tbdhmr.png",
       "alt": " ",
       "__v": 0
     }

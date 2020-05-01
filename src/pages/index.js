@@ -37,9 +37,6 @@ const IndexPage = () => {
     filter(partners)
   }, [])
 
-  // filtered.map(partner => {
-  //   return console.log(partner)
-  // })
   return (
     <Layout>
       <SEO title="Home" />
@@ -47,6 +44,7 @@ const IndexPage = () => {
         {filtered.map(item => {
           return (
             <PartnerCard
+              image={item.image}
               organisation={item.organisation}
               type={item.type}
               theme={item.themes}
