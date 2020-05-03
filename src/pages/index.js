@@ -19,6 +19,7 @@ const IndexPage = () => {
   const [query, setQuery] = useState("Africa")
   const [filtered, setFiltered] = useState([])
   const [unfiltered, setUnfiltered] = useState([])
+  const [alphabeticPartner, setAlphabeticPartner] = useState([])
 
   const filter = data => {
     const queryTrue = []
@@ -35,6 +36,9 @@ const IndexPage = () => {
 
   useEffect(() => {
     filter(partners)
+    partners.sort()
+    setAlphabeticPartner(partners)
+    console.log(partners)
   }, [])
 
   return (
@@ -42,6 +46,23 @@ const IndexPage = () => {
       <SEO title="Home" />
 
       <CardContainer>
+        {alphabeticPartner.map(partner => {
+          return (
+            <PartnerCard
+              image={partner.image}
+              organisation={partner.organisation}
+              type={partner.type}
+              theme={partner.themes}
+              hq={partner.hq}
+              workingRegion={partner.workingRegion}
+              website={partner.website}
+              key={partner.id}
+            />
+          )
+        })}
+      </CardContainer>
+
+      {/* <CardContainer>
         {filtered.map(item => {
           return (
             <PartnerCard
@@ -56,25 +77,7 @@ const IndexPage = () => {
             />
           )
         })}
-      </CardContainer>
-
-      <h1>Separation Line</h1>
-      <CardContainer>
-        {unfiltered.map(item => {
-          return (
-            <PartnerCard
-              organisation={item.organisation}
-              type={item.type}
-              theme={item.themes}
-              hq={item.hq}
-              workingRegion={item.workingRegion}
-              website={item.website}
-              key={item.id}
-              image={item.image}
-            />
-          )
-        })}
-      </CardContainer>
+      </CardContainer> */}
     </Layout>
   )
 }
