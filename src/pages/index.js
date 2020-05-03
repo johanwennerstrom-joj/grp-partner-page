@@ -40,7 +40,6 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
-
       <CardContainer>
         {filtered.map(item => {
           return (
