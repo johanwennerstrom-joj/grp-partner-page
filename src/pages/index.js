@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react"
-import { Link } from "gatsby"
 
 // Data
 import Data from "../data/partners.json"
@@ -7,10 +6,11 @@ import Data from "../data/partners.json"
 // Components
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import PartnerCard from "../components/PartnerCard/index"
-import CardContainer from "../components/CardContainer/index"
+// import PartnerCard from "../components/PartnerCard/index"
+// import CardContainer from "../components/CardContainer/index"
+import ButtonRow from "../components/ButtonRow/index"
 
-const IndexPage = () => {
+const IndexPage = e => {
   // Destructuring JSON data
   const { partners } = Data
 
@@ -20,6 +20,7 @@ const IndexPage = () => {
   const [filtered, setFiltered] = useState([])
   const [unfiltered, setUnfiltered] = useState([])
   const [alphabeticPartner, setAlphabeticPartner] = useState([])
+  const [input, setInput] = useState("")
 
   const filter = data => {
     const queryTrue = []
@@ -38,13 +39,19 @@ const IndexPage = () => {
     filter(partners)
     partners.sort()
     setAlphabeticPartner(partners)
-    console.log(partners)
   }, [])
+
+  const logInput = () => {
+    setInput(e.target.value)
+  }
 
   return (
     <Layout>
       <SEO title="Home" />
-      <CardContainer>
+
+      {/* <ButtonRow changed={logInput}  /> */}
+
+      {/* <CardContainer>
         {alphabeticPartner.map(partner => {
           return (
             <PartnerCard
@@ -59,7 +66,7 @@ const IndexPage = () => {
             />
           )
         })}
-      </CardContainer>
+      </CardContainer> */}
 
       {/* <CardContainer>
         {filtered.map(item => {
