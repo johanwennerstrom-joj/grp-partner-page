@@ -2,73 +2,44 @@ import React, { useState } from "react"
 import "./index.scss"
 
 const ButtonRow = props => {
-  const [show, setShow] = useState(true)
-  const [show1, setShow1] = useState(true)
-  const [show2, setShow2] = useState(true)
-  const [show3, setShow3] = useState(true)
+  const [show, setShow] = useState({})
 
-  const toggleShow = () => {
-    setShow(!show)
+  const toggleShow = e => {
+    // e.preventDefault()
+    // setShow(show => !show)
+
+    console.log(e.target)
   }
-  const toggleShow1 = () => {
-    setShow1(!show1)
-  }
-  const toggleShow2 = () => {
-    setShow2(!show2)
-  }
-  const toggleShow3 = () => {
-    setShow3(!show3)
-  }
+  // const submitValue = () => {
+  //     const submitDetails = {
+  //     input,
+  //     }
+  // }
   return (
     <div>
       <ul>
         <li>
           <div>
             <button onClick={toggleShow}>Working Region</button>
-            <ul style={show ? { display: "none" } : { display: "block" }}>
+            <ul style={{ display: "none" }}>
               <li>
-                <input
-                  type="checkbox"
-                  value="Africa"
-                  id="Africa"
-                  onChange={props.changed}
-                />
+                <input type="checkbox" value="Africa" id="Africa" />
                 <label id="Africa">Africa</label>
               </li>
               <li>
-                <input
-                  type="checkbox"
-                  value="Asia"
-                  id="Asia"
-                  onChange={props.changed}
-                />
+                <input type="checkbox" value="Asia" id="Asia" />
                 <label id="Asia">Asia</label>
               </li>
               <li>
-                <input
-                  type="checkbox"
-                  value="Europe"
-                  id="Europe"
-                  onChange={props.changed}
-                />
+                <input type="checkbox" value="Europe" id="Europe" />
                 <label id="Europe">Europe</label>
               </li>
               <li>
-                <input
-                  type="checkbox"
-                  value="Middle East"
-                  id="Middle East"
-                  onChange={props.changed}
-                />
+                <input type="checkbox" value="Middle East" id="Middle East" />
                 <label id="Middle East">Middle East</label>
               </li>
               <li>
-                <input
-                  type="checkbox"
-                  value="Global"
-                  id="Global"
-                  onChange={props.changed}
-                />
+                <input type="checkbox" value="Global" id="Global" />
                 <label id="Global">Global</label>
               </li>
             </ul>
@@ -76,14 +47,13 @@ const ButtonRow = props => {
         </li>
         <li>
           <div>
-            <button onClick={toggleShow1}>Themes</button>
-            <ul style={show1 ? { display: "none" } : { display: "block" }}>
+            <button onClick={toggleShow}>Themes</button>
+            <ul style={show ? { display: "none" } : { display: "block" }}>
               <li>
                 <input
                   type="checkbox"
                   value="Private sector and investment"
                   id="Private sector and investment"
-                  onChange={props.changed}
                 />
                 <label id="Private sector and investment">
                   Private sector and investment
@@ -94,7 +64,6 @@ const ButtonRow = props => {
                   type="checkbox"
                   value="Disaster risk reduction"
                   id="Disaster risk reduction"
-                  onChange={props.changed}
                 />
                 <label id="Disaster risk reduction">
                   Disaster risk reduction
@@ -105,7 +74,6 @@ const ButtonRow = props => {
                   type="checkbox"
                   value="Innovation and scaling"
                   id="Innovation and scaling"
-                  onChange={props.changed}
                 />
                 <label id="Innovation and scaling">
                   Innovation and scaling
@@ -116,7 +84,6 @@ const ButtonRow = props => {
                   type="checkbox"
                   value="Food and water security"
                   id="Food and water security"
-                  onChange={props.changed}
                 />
                 <label id="Food and water security">
                   Food and water security
@@ -127,7 +94,6 @@ const ButtonRow = props => {
                   type="checkbox"
                   value="Information and technology"
                   id="Information and technology"
-                  onChange={props.changed}
                 />
                 <label id="Information and technology">
                   Information and technology
@@ -138,7 +104,7 @@ const ButtonRow = props => {
         </li>
         <li>
           <div>
-            <button onClick={props.clicked}>Headquarters</button>
+            <button>Headquarters</button>
           </div>
         </li>
         <li>
@@ -152,3 +118,57 @@ const ButtonRow = props => {
 }
 
 export default ButtonRow
+
+/*          <ul>
+              <li>
+                <input
+                  type="checkbox"
+                  value="Private sector and investment"
+                  id="Private sector and investment"
+                />
+                <label id="Private sector and investment">
+                  Private sector and investment
+                </label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  value="Disaster risk reduction"
+                  id="Disaster risk reduction"
+                />
+                <label id="Disaster risk reduction">
+                  Disaster risk reduction
+                </label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  value="Innovation and scaling"
+                  id="Innovation and scaling"
+                />
+                <label id="Innovation and scaling">
+                  Innovation and scaling
+                </label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  value="Food and water security"
+                  id="Food and water security"
+                />
+                <label id="Food and water security">
+                  Food and water security
+                </label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  value="Information and technology"
+                  id="Information and technology"
+                />
+                <label id="Information and technology">
+                  Information and technology
+                </label>
+              </li>
+            </ul>
+          </div> */

@@ -19,8 +19,6 @@ const IndexPage = e => {
   const [query, setQuery] = useState("Africa")
   const [filtered, setFiltered] = useState([])
   const [unfiltered, setUnfiltered] = useState([])
-  const [alphabeticPartner, setAlphabeticPartner] = useState([])
-  const [input, setInput] = useState("")
 
   const filter = data => {
     const queryTrue = []
@@ -37,22 +35,15 @@ const IndexPage = e => {
 
   useEffect(() => {
     filter(partners)
-    partners.sort()
-    setAlphabeticPartner(partners)
-  }, [])
-
-  const logInput = () => {
-    setInput(e.target.value)
-  }
+  }, [partners])
 
   return (
     <Layout>
       <SEO title="Home" />
-
-      {/* <ButtonRow changed={logInput}  /> */}
+      <ButtonRow />
 
       {/* <CardContainer>
-        {alphabeticPartner.map(partner => {
+        {partners.map(partner => {
           return (
             <PartnerCard
               image={partner.image}
@@ -63,23 +54,6 @@ const IndexPage = e => {
               workingRegion={partner.workingRegion}
               website={partner.website}
               key={partner.id}
-            />
-          )
-        })}
-      </CardContainer> */}
-
-      {/* <CardContainer>
-        {filtered.map(item => {
-          return (
-            <PartnerCard
-              image={item.image}
-              organisation={item.organisation}
-              type={item.type}
-              theme={item.themes}
-              hq={item.hq}
-              workingRegion={item.workingRegion}
-              website={item.website}
-              key={item.id}
             />
           )
         })}
