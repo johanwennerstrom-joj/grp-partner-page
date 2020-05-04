@@ -1,41 +1,47 @@
 @import "../../global/variables.scss";
 
 
-ul {
+
+.container {
     font-family: franklin-gothic-condensed, sans-serif;
-    list-style-type: none;
-    margin: 0;
+    font-size: 1.3rem;
     padding: 0;
-  }
-
-  li {
-    display: inline;
-    justify-content: space-around;
-  }
-
-  li a {
-    color: $skyBlue;
-    text-decoration: none;
+    
 }
 
-// nav {
-//     color: $skyBlue;
-   
-// }
+.container {
+    ul {
+        display: grid;
+        grid-template-columns: 3fr 1fr 1fr 1fr 0.8fr 0.7fr 1.1fr 2fr;
+  grid-auto-rows: auto;
+  align-items: center;
+  text-align: center;
+  
+}
+}
 
+  .container {
+      ul {
+        list-style-type: none;
+      }
+  }
+  .container {
+      li {
+          a {
+            text-decoration: none;
+            color: $skyBlue;
+          }
+      }
+  }
+  
+  .container {
+        li {
+            a:hover {
+        color: $forestGreen;
+        }
+    }
+}
 
-// li {
-//     color: $skyBlue;
-    
-   
-//   }
-
-// a {
-//     color: $skyBlue;
-// }
-
-
-
-li a:hover {
-    color: $forestGreen;
+.socialmedia {
+    padding-right: 45px;
 }
