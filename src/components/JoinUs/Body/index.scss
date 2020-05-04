@@ -1,0 +1,30 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.textcontainer {
+  padding-left: 12rem;
+  width: 36rem;
+  // display: inline-block;
+}
+
+.imagecontainer {
+  // clip-path: inset(0 18% 0 31%);
+  width: 400px;
+  background-color: aqua;
+  height: 900px;
+  overflow: hidden;
+  // height: auto;
+  // display: inline-block;
+  // position: relative;
+  // left: 200px;
+  // bottom: 500px;
+}
+
+#childrenimage {
+  max-height: 100%;
+  position: relative;
+  right: 700px;
+}
