@@ -1,7 +1,7 @@
 @import "../../global/variables.scss";
 
-
-ul {
+.nav {
+  ul {
     font-family: franklin-gothic-condensed, sans-serif;
     list-style-type: none;
     margin: 0;
@@ -16,26 +16,23 @@ ul {
   li a {
     color: $skyBlue;
     text-decoration: none;
-}
+  }
 
-// nav {
-//     color: $skyBlue;
-   
-// }
+  // nav {
+  //     color: $skyBlue;
 
+  // }
 
-// li {
-//     color: $skyBlue;
-    
-   
-//   }
+  // li {
+  //     color: $skyBlue;
 
-// a {
-//     color: $skyBlue;
-// }
+  //   }
 
+  // a {
+  //     color: $skyBlue;
+  // }
 
-
-li a:hover {
+  li a:hover {
     color: $forestGreen;
+  }
 }

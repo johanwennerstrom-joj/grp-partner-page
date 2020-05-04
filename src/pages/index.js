@@ -15,39 +15,48 @@ const IndexPage = e => {
   const { partners } = Data
 
   // State
-  const [sort, setSort] = useState()
-  const [query, setQuery] = useState()
-  const [filtered, setFiltered] = useState("")
+  const [sort, setSort] = useState("")
+  const [query, setQuery] = useState(" ")
+  const [filtered, setFiltered] = useState(" ")
 
   const filter = data => {
     const queryTrue = []
     const queryFalse = []
 
     data.map(partner => {
-      partner[sort].includes(query)
+      return partner[sort].includes(query)
         ? queryTrue.push(partner)
         : queryFalse.push(partner)
     })
     setFiltered(queryTrue)
   }
-  const handleClick = e => {
+
+  const handleChange = e => {
     const value = e.target.value
     const split = value.split(",")
 
-    setSort(() => split[0])
-    setQuery(() => split[1])
-    console.log(sort, query)
+    return setSort(split[0]), setQuery(split[1])
   }
 
-  // useEffect(() => {}, [])
+  const handleClick = e => {
+    try {
+      e.preventDefault()
+      return filter(partners)
+    } catch (error) {
+      console.log("error")
+    }
+  }
+
+  console.log(filtered)
 
   return (
     <Layout>
       <SEO title="Home" />
-      <ButtonRow clicked={handleClick} />
+      <ButtonRow changed={handleChange} buttonClick={handleClick} />
 
       <CardContainer>
-        {filtered === ""
+        <h1>{query}</h1>
+        {filtered === " "
           ? partners.map(partner => {
               return (
                 <PartnerCard
