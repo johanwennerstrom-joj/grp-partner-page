@@ -43,7 +43,7 @@ const IndexPage = e => {
       e.preventDefault()
       return filter(partners)
     } catch (error) {
-      console.log("error")
+      console.log(error)
     }
   }
 
