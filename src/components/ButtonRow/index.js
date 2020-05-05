@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import "./index.scss"
 import Themes from "../../data/themes.json"
 import Input from "./input"
@@ -8,10 +8,16 @@ const ButtonRow = props => {
   const [themes, setThemes] = useState(false)
   const [hq, setHq] = useState(false)
   const [types, setTypes] = useState(false)
-  console.log(workReg)
+
+  const handleWorkreg = e => {
+    e.preventDefault()
+    setWorkReg(!workReg)
+  }
+
   return (
     <div className="main__container">
       <div className="inputWrap">
+
         <button onClick={() => setWorkReg(!workReg)}>WORKING REGION</button>
 
         <ul style={workReg ? { display: "block" } : { display: "none" }}>
@@ -25,6 +31,8 @@ const ButtonRow = props => {
             )
           })}
         </ul>
+
+
       </div>
       <div className="inputWrap">
         <button onClick={() => setThemes(!themes)}>THEME</button>

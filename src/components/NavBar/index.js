@@ -7,7 +7,6 @@ import Socialmedia from "./socialmedia.png"
 
 const NavBar = () => {
   return (
-
     <>
 
       <nav>
@@ -18,7 +17,10 @@ const NavBar = () => {
                 src={Logo}
                 alt=" "
                 width="110"
-                height="55" /> </div>
+                height="55"
+                alt=" "
+              />
+            </div>
             <li><Link to="/404">About Us </Link></li>
             <li><Link to="/joinus">Join Us! </Link></li>
             <li><Link to="/404">Challenges </Link></li>
@@ -29,6 +31,7 @@ const NavBar = () => {
               <img src={Socialmedia}
                 width="140"
                 height="40"
+                alt=" "
               />
             </div>
           </ul>
@@ -36,7 +39,6 @@ const NavBar = () => {
 
       </nav>
     </>
-
   )
 }
 
