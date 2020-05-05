@@ -9,6 +9,7 @@ import SEO from "../components/seo"
 import PartnerCard from "../components/PartnerCard/index"
 import CardContainer from "../components/CardContainer/index"
 import ButtonRow from "../components/ButtonRow/index"
+import SearchButton from "../components/SearchButton/index"
 
 const IndexPage = e => {
   // Destructuring JSON data
@@ -46,11 +47,18 @@ const IndexPage = e => {
       console.log(error)
     }
   }
+  const handleReset = () => {
+    setSort("")
+    setQuery("")
+    setFiltered(partners)
+  }
 
   return (
     <Layout>
       <SEO title="Home" />
-      <ButtonRow changed={handleChange} buttonClick={handleClick} />
+      <ButtonRow changed={handleChange} />
+      <SearchButton clicked={handleClick} clickReset={handleReset} />
+
       <span>{query}</span>
       <CardContainer>
         {filtered === " "

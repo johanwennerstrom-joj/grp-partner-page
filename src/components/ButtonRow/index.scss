@@ -7,8 +7,8 @@
   }
   display: flex;
   justify-content: center;
-  // height: 30rem;
-  margin-top: 8rem;
+  height: 20rem;
+  margin-top: 6rem;
 
   button {
     height: 4rem;
@@ -17,27 +17,29 @@
     border: none;
     font-weight: bold;
     font-size: 1rem;
+    margin: 0 1.2rem 0 0;
   }
   .inputWrap {
     // display: flex;
     justify-content: center;
+    margin: 0 1.6rem 0 1.6rem;
+  }
+  label {
+    margin-left: 0.8rem;
   }
 
-  form {
-    // display: flex;
-    justify-content: center;
-  }
   ul {
     list-style: none;
     border: white 1px solid;
     background-color: black;
+    border-radius: 1rem;
     padding-top: 15px;
     padding-right: 15px;
     color: white;
     width: 7rem;
     line-height: 1.75rem;
     padding-bottom: 1.5rem;
-    // flex: display;
+    min-width: 17.925rem;
     width: -moz-fit-content;
     width: -webkit-fit-content;
     // height: -moz-fit-content;
