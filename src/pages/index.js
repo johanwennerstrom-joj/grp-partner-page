@@ -53,38 +53,37 @@ const IndexPage = e => {
     <Layout>
       <SEO title="Home" />
       <ButtonRow changed={handleChange} buttonClick={handleClick} />
-
+      <span>{query}</span>
       <CardContainer>
-        <h1>{query}</h1>
         {filtered === " "
           ? partners.map(partner => {
-              return (
-                <PartnerCard
-                  image={partner.image}
-                  organisation={partner.organisation}
-                  type={partner.type}
-                  theme={partner.themes}
-                  hq={partner.hq}
-                  workingRegion={partner.workingRegion}
-                  website={partner.website}
-                  key={partner.id}
-                />
-              )
-            })
+            return (
+              <PartnerCard
+                image={partner.image}
+                organisation={partner.organisation}
+                type={partner.type}
+                theme={partner.themes}
+                hq={partner.hq}
+                workingRegion={partner.workingRegion}
+                website={partner.website}
+                key={partner.id}
+              />
+            )
+          })
           : filtered.map(partner => {
-              return (
-                <PartnerCard
-                  image={partner.image}
-                  organisation={partner.organisation}
-                  type={partner.type}
-                  theme={partner.themes}
-                  hq={partner.hq}
-                  workingRegion={partner.workingRegion}
-                  website={partner.website}
-                  key={partner.id}
-                />
-              )
-            })}
+            return (
+              <PartnerCard
+                image={partner.image}
+                organisation={partner.organisation}
+                type={partner.type}
+                theme={partner.themes}
+                hq={partner.hq}
+                workingRegion={partner.workingRegion}
+                website={partner.website}
+                key={partner.id}
+              />
+            )
+          })}
       </CardContainer>
     </Layout>
   )

@@ -12,7 +12,8 @@ const Header = props => {
           GRP is a diverse partnership of more than 50 organisations joining
           forces to work towards a world where vulnerable people and places are
           able to thrive in the face of shocks, uncertainty and change.
-        </p>
+        </p>{" "}
+        <br></br>
         <p className="text__intro">
           Partners are organisations active in resilience who share GRP’s vision
           and values, and who have joined the Partnership. Organisations who

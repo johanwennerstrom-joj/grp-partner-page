@@ -7,7 +7,6 @@ import Socialmedia from "./socialmedia.png"
 
 const NavBar = () => {
   return (
-
     <>
 
       <nav>
@@ -36,7 +35,6 @@ const NavBar = () => {
 
       </nav>
     </>
-
   )
 }
 
