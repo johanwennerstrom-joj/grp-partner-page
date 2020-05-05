@@ -5,7 +5,7 @@ import "./index.scss"
 const PartnerCard = props => {
   return (
     <>
-      <div className="card">
+      <article className="card">
         <div className="card__img--wrapper">
           <img
             className="card__logo"
@@ -31,7 +31,7 @@ const PartnerCard = props => {
         <a href={props.website} target="_blank" rel="noopener noreferrer">
           <span className="card__title">WEBSITE</span>
         </a>
-      </div>
+      </article>
     </>
   )
 }
