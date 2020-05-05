@@ -1,48 +1,43 @@
 @import "../../global/variables.scss";
 
-
-
-
 .container {
-    font-family: franklin-gothic-condensed, sans-serif;
-    font-size: 1.3rem;
-    padding: 0;
+  font-family: franklin-gothic-condensed, sans-serif;
+  font-size: 1.3rem;
+  padding: 0;
 }
 
 .container {
-    ul {
-        display: grid;
-        grid-template-columns: 3fr 1fr 1fr 1fr 0.8fr 0.7fr 1.1fr 2fr;
-        grid-auto-rows: auto;
-        align-items: center;
-        text-align: center;
-}
+  ul {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr 0.8fr 0.7fr 1.1fr 2fr;
+    grid-auto-rows: auto;
+    align-items: center;
+    text-align: center;
+  }
 }
 
-  .container {
-      ul {
-        list-style-type: none;
-      }
+.container {
+  ul {
+    list-style-type: none;
   }
-  .container {
-      li {
-          a {
-            text-decoration: none;
-            color: $skyBlue;
-          }
-      }
-  }
-  
-  .container {
-        li {
-            a:hover {
-            color: $forestGreen;
-        }
+}
+.container {
+  li {
+    a {
+      text-decoration: none;
+      color: $skyBlue;
     }
+  }
+}
+
+.container {
+  li {
+    a:hover {
+      color: $forestGreen;
+    }
+  }
 }
 
 .socialmedia {
-    padding-right: 45px;
+  padding-right: 45px;
 }
-
-
