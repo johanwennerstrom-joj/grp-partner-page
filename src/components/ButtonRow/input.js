@@ -1,4 +1,5 @@
 import React from "react"
+import "./index.scss"
 
 const Input = props => {
   return (
@@ -10,6 +11,7 @@ const Input = props => {
           id={props.display}
           onChange={props.change}
         />
+        <span className="checkmark"></span>
         <label htmlFor={props.display} id={props.display}>
           {props.display}
         </label>
