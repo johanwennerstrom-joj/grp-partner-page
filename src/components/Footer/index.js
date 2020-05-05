@@ -1,6 +1,6 @@
 import React from "react"
 import "./index.scss"
-import UKaidlogo from "./UKaidlogo.png"
+import UKaidlogo from "./ukaidlogo.png"
 import SWElogo from "./SWElogo.png"
 
 const Footer = () => {
