@@ -17,68 +17,67 @@ const ButtonRow = props => {
   return (
     <div className="main__container">
       <div className="inputWrap">
-        <form>
-          <button onClick={() => handleWorkreg}>Working Region</button>
-          <ul style={workReg ? { display: "block" } : { display: "none" }}>
-            {Themes.workingRegion.map(input => {
-              return (
-                <Input
-                  value={input.value}
-                  change={props.changed}
-                  display={input.value[1]}
-                />
-              )
-            })}
-          </ul>
-        </form>
+
+        <button onClick={() => setWorkReg(!workReg)}>WORKING REGION</button>
+
+        <ul style={workReg ? { display: "block" } : { display: "none" }}>
+          {Themes.workingRegion.map(input => {
+            return (
+              <Input
+                value={input.value}
+                change={props.changed}
+                display={input.value[1]}
+              />
+            )
+          })}
+        </ul>
+
+
       </div>
       <div className="inputWrap">
-        <form>
-          <button onClick={() => setThemes(!themes)}>Themes</button>
-          <ul style={themes ? { display: "block" } : { display: "none" }}>
-            {Themes.themes.map(input => {
-              return (
-                <Input
-                  value={input.value}
-                  change={props.changed}
-                  display={input.value[1]}
-                />
-              )
-            })}
-          </ul>
-        </form>
+        <button onClick={() => setThemes(!themes)}>THEME</button>
+
+        <ul style={themes ? { display: "block" } : { display: "none" }}>
+          {Themes.themes.map(input => {
+            return (
+              <Input
+                value={input.value}
+                change={props.changed}
+                display={input.value[1]}
+              />
+            )
+          })}
+        </ul>
       </div>
       <div className="inputWrap">
-        <form>
-          <button onClick={() => setHq(!hq)}>Headquarters</button>
-          <ul style={hq ? { display: "block" } : { display: "none" }}>
-            {Themes.hq.map(input => {
-              return (
-                <Input
-                  value={input.value}
-                  change={props.changed}
-                  display={input.value[1]}
-                />
-              )
-            })}
-          </ul>
-        </form>
+        <button onClick={() => setHq(!hq)}>HEADQUARTERS</button>
+
+        <ul style={hq ? { display: "block" } : { display: "none" }}>
+          {Themes.hq.map(input => {
+            return (
+              <Input
+                value={input.value}
+                change={props.changed}
+                display={input.value[1]}
+              />
+            )
+          })}
+        </ul>
       </div>
       <div className="inputWrap">
-        <form>
-          <button onClick={() => setTypes(!types)}>Organization Type</button>
-          <ul style={types ? { display: "block" } : { display: "none" }}>
-            {Themes.types.map(input => {
-              return (
-                <Input
-                  value={input.value}
-                  change={props.changed}
-                  display={input.value[1]}
-                />
-              )
-            })}
-          </ul>
-        </form>
+        <button onClick={() => setTypes(!types)}>ORGANISATION TYPE</button>
+
+        <ul style={types ? { display: "block" } : { display: "none" }}>
+          {Themes.types.map(input => {
+            return (
+              <Input
+                value={input.value}
+                change={props.changed}
+                display={input.value[1]}
+              />
+            )
+          })}
+        </ul>
       </div>
     </div>
   )
