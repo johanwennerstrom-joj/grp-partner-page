@@ -28,8 +28,9 @@ const Header = props => {
           alt=" "
         />
       </div>
-
-      <Button className="header__button" />
+      <div className="header__button--wrapper">
+        <Button className="header__button" route="/joinus" text="Join Us" />
+      </div>
     </header>
   )
 }

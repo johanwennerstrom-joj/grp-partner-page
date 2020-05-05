@@ -1,9 +1,18 @@
 @import url("https://use.typekit.net/gsy5vob.css");
 
+$bodyText: Arial, Helvetica, sans-serif;
+
 .text__intro {
   font-family: "franklin-gothic-compressed", "Franklin Gothic Medium",
     "Segoe UI", Tahoma, "Arial Narrow", Arial, sans-serif;
   font-size: 1.4rem;
+  line-height: 1.161;
+}
+
+@mixin card-categories {
+  font-weight: bold;
+  font-variant-caps: all-small-caps;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 // these are the fonts we will use in the project. Franklin Gothic Book Compressed for the larger body text. And the Condensed version for titles. I will clean up this file!
