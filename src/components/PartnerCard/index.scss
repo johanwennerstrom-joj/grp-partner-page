@@ -1,3 +1,32 @@
+@use "../../global/typography";
+
+.card {
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  margin: 0 1rem 8rem 1rem;
+  grid-auto-rows: auto;
+  h3 {
+    line-height: 1.122;
+  }
+  p {
+    font-family: typography.$bodyText;
+    line-height: 1.25;
+  }
+}
+
+.card__img--wrapper {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
 .card__logo {
-  width: 300px;
+  object-fit: scale-down;
+}
+
+.card__title {
+  @include typography.card-categories;
 }

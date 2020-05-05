@@ -6,8 +6,8 @@ import Data from "../data/partners.json"
 // Components
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-// import PartnerCard from "../components/PartnerCard/index"
-// import CardContainer from "../components/CardContainer/index"
+import PartnerCard from "../components/PartnerCard/index"
+import CardContainer from "../components/CardContainer/index"
 import ButtonRow from "../components/ButtonRow/index"
 
 const IndexPage = e => {
@@ -42,7 +42,7 @@ const IndexPage = e => {
       <SEO title="Home" />
       <ButtonRow />
 
-      {/* <CardContainer>
+      <CardContainer>
         {partners.map(partner => {
           return (
             <PartnerCard
@@ -57,7 +57,7 @@ const IndexPage = e => {
             />
           )
         })}
-      </CardContainer> */}
+      </CardContainer>
     </Layout>
   )
 }
