@@ -2,21 +2,20 @@
 
 
 
+
 .container {
     font-family: franklin-gothic-condensed, sans-serif;
     font-size: 1.3rem;
     padding: 0;
-    
 }
 
 .container {
     ul {
         display: grid;
         grid-template-columns: 3fr 1fr 1fr 1fr 0.8fr 0.7fr 1.1fr 2fr;
-  grid-auto-rows: auto;
-  align-items: center;
-  text-align: center;
-  
+        grid-auto-rows: auto;
+        align-items: center;
+        text-align: center;
 }
 }
 
@@ -37,7 +36,7 @@
   .container {
         li {
             a:hover {
-        color: $forestGreen;
+            color: $forestGreen;
         }
     }
 }
@@ -45,3 +44,5 @@
 .socialmedia {
     padding-right: 45px;
 }
+
+
