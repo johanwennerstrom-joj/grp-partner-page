@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import "./index.scss"
-import Logo from "./GrpLogo.png"
+import Logo from "./GRPlogo.png"
 import Socialmedia from "./socialmedia.png"
 
 
