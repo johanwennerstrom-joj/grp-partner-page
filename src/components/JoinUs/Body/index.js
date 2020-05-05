@@ -32,6 +32,7 @@ const JoinUsBody = () => {
           <img
             id="childrenimage"
             src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+            alt="Two children smiling"
           ></img>
         </div>
       </div>
