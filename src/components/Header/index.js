@@ -26,7 +26,7 @@ const Header = props => {
           src={Women_India}
           width="730"
           height="410"
-          alt=" "
+          alt="Two women walking on the street"
         />
       </div>
       <div className="header__button--wrapper">

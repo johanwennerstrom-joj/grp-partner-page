@@ -3,18 +3,11 @@
 @use "../../global/variables";
 
 .btn-wrap {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 4rem;
-
+  margin-left: 2rem;
+  img {
+    margin-bottom: -2rem;
+  }
   button {
-    color: #ffffff;
-    background-color: variables.$oceanBlue;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    font-size: 1.2rem;
-    font-weight: bold;
-    padding: 0.6rem 2.8rem 0.6rem 2.8rem;
-    border-radius: 1rem;
+    border: none;
   }
 }

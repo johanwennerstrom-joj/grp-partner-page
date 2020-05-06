@@ -1,8 +1,10 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import "./index.scss"
 import Sort from "../../data/sort.json"
 import Input from "./input"
 import Arrow from "./arrow.svg"
+import SearchButton from "../SearchButton/index"
+import reset from "../../images/reset.png"
 
 const ButtonRow = props => {
   const [workReg, setWorkReg] = useState(false)
@@ -85,6 +87,15 @@ const ButtonRow = props => {
           })}
         </ul>
       </div>
+      <span className="search__query">
+        <h3>
+          <button onClick={props.clickReset}>
+            <img src={reset} alt="reset button" height="20" width="20" />
+          </button>{" "}
+          Search query:
+        </h3>
+        {props.query}
+      </span>
     </div>
   )
 }

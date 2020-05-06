@@ -1,5 +1,37 @@
-@import "../../global/variables.scss";
+@use "../../global/main.scss";
+@use "../../global/typography";
+@use "../../global/variables";
 
+.wrap {
+  margin-top: 10rem;
+  margin-bottom: 4rem;
+  .find__partner {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-weight: bold;
+    margin-left: 8rem;
+    margin-bottom: 4rem;
+    padding-left: 1rem;
+    border-left: 0.8rem solid variables.$skyBlue;
+  }
+  .search__query {
+    margin-left: 6rem;
+
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    button {
+      background-color: #ffffff;
+      border: none;
+    }
+    img {
+      margin-bottom: -0.2rem;
+    }
+    h3 {
+      display: inline-block;
+      border-bottom: 0.4rem solid variables.$skyBlue;
+      padding-bottom: 0.6rem;
+      margin-right: 1rem;
+    }
+  }
+}
 .main__container {
   * {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -10,31 +42,49 @@
   height: 20rem;
   margin-top: 6rem;
 
-  button {
-    height: 4rem;
-    width: 17rem;
-    text-align: center;
-    border: none;
-    font-weight: bold;
-    font-size: 1rem;
-    margin: 0 1.2rem 0 0;
+  ::-webkit-scrollbar {
+    width: 0.8rem;
+    height: 80%;
   }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 1rem;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: variables.$skyBlue;
+    border-radius: 1rem;
+  }
+
   .inputWrap {
     display: block;
     justify-content: center;
     margin: 0 1.6rem 0 1.6rem;
+    button {
+      height: 4rem;
+      width: 14rem;
+      text-align: center;
+      border: none;
+      font-weight: bold;
+      font-size: 1rem;
+      margin: 0 2rem 0 2rem;
+      background-color: #ffffff;
+    }
   }
+
   label {
     margin-left: 0.8rem;
   }
 
   ul {
+    opacity: 0.9;
     list-style: none;
-    border: white 1px solid;
-    background-color: black;
-    border-radius: 1rem;
-    padding-top: 15px;
-    padding-right: 15px;
+    background-color: #000000;
+    box-shadow: 0.6rem 0.8rem 2rem variables.$rockGray;
+    border-radius: 0.8rem;
+    padding-top: 0.8rem;
+    padding-right: 0.8rem;
     color: white;
     width: 7rem;
     line-height: 1.75rem;
@@ -43,6 +93,7 @@
     width: -moz-fit-content;
     width: -webkit-fit-content;
     height: 200px;
+
     overflow-y: hidden;
     overflow-y: scroll;
     display: block;
@@ -50,6 +101,7 @@
 
     li {
       text-decoration: none;
+      letter-spacing: 0.06rem;
     }
   }
 

@@ -14,15 +14,18 @@ form {
 }
 
 .formcontainer {
-  width: 400px;
+  width: 500px;
   height: 450px;
-  background-color: #0071b8;
-  padding: 50px;
+  // background-color: #0071b8;
+  background-color: #c1d9d3;
+  padding: 40px 90px;
   border-radius: 10%;
   margin-left: 12rem;
   position: relative;
-  // bottom: 300px;
+  bottom: 450px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.1rem;
+  // color: white;
 }
 
 #interestbox {
@@ -36,3 +39,15 @@ form {
 // border-radius: 4px;
 // box-sizing: border-box;
 // }
+
+input[type="submit"] {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  background-color: #86a49c;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  // padding: 1.3rem 2rem 1.3rem 2rem;
+  border-radius: 0.8rem;
+}

@@ -8,6 +8,7 @@
   padding-left: 12rem;
   padding-top: 6rem;
   width: 55rem;
+  height: max-content;
   // display: inline-block;
 }
 
@@ -17,6 +18,7 @@
   background-color: aqua;
   height: 900px;
   overflow: hidden;
+  margin-top: 6rem;
   // height: auto;
   // display: inline-block;
   // position: relative;
@@ -25,7 +27,12 @@
 }
 
 #childrenimage {
-  max-height: 100%;
-  position: relative;
-  // right: 700px;
+  // // min-height: 100%;
+  // max-width: auto;
+  // position: relative;
+  // // right: 700px;
+  object-fit: cover;
+  min-width: 100%;
+  min-height: 100%;
+  background-position: ;
 }

@@ -1,5 +1,6 @@
 import React from "react"
 import "./index.scss"
+import Form from "../Form/index"
 
 const JoinUsBody = () => {
   return (
@@ -23,6 +24,7 @@ const JoinUsBody = () => {
             investments, highlight effective action, and support GRP.
           </p>
           <br></br>
+          <br></br>
           <h2>Join the Global Resilience Partnership</h2>
           <br></br>
           <p>
@@ -32,6 +34,7 @@ const JoinUsBody = () => {
             benefit from GRP’s offer.
           </p>
         </div>
+        {/* <Form /> */}
         <div className="imagecontainer">
           <img
             id="childrenimage"
@@ -39,6 +42,7 @@ const JoinUsBody = () => {
             alt="Two children smiling"
           ></img>
         </div>
+        <Form />
       </div>
     </>
   )
