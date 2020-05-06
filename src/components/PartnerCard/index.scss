@@ -1,13 +1,16 @@
 @use "../../global/typography";
 
 .card {
-  padding: 2rem;
-  border: 1px solid black;
+  padding: 1rem;
+  border: 1px solid #00000075;
   display: flex;
   flex-flow: column;
+  align-items: center;
   margin: 0;
   border-radius: 1rem;
+
   h3 {
+    @include typography.small-title;
     line-height: 1.122;
   }
   p {
@@ -16,9 +19,13 @@
   }
 }
 
+.card__content-container {
+  width: 100%;
+}
+
 .card__img--wrapper {
-  width: 200px;
-  height: 200px;
+  width: 140px;
+  height: 140px;
   display: flex;
   align-content: center;
   justify-content: center;
@@ -29,6 +36,6 @@
   margin-bottom: 1rem;
 }
 
-.card__title {
-  @include typography.card-categories;
-}
+// .card__title {
+//   @include typography.card-categories;
+// }
