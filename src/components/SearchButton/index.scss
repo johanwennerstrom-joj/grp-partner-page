@@ -2,12 +2,16 @@
 @use "../../styles/typography";
 @use "../../styles/variables";
 
-.btn-wrap {
-  margin-left: 2rem;
-  img {
-    margin-bottom: -2rem;
-  }
+.searchButton {
   button {
-    border: none;
+    background-color: variables.$skyBlue;
+    color: #ffffff;
+    @include typography.section-heading;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 1.4rem 2rem 1.4rem 2rem;
+    border-radius: 1rem;
+    text-align: center;
   }
 }

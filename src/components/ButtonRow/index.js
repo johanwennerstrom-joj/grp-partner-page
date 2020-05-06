@@ -13,16 +13,13 @@ const ButtonRow = props => {
   const [types, setTypes] = useState(false)
 
   return (
-
     <div className="wrap">
       <h2 className="filter__heading">Find a Partner</h2>
-
       <div className="main__container">
-        <SearchButton clicked={props._clicked} />
         <div className="inputWrap">
           <button onClick={() => setWorkReg(!workReg)} onFocus={() => void 0}>
             Working Region
-                      <img src={Arrow} alt="Arrow" />
+            <img src={Arrow} alt="Arrow" />
           </button>
           <ul
             style={workReg ? { display: "block" } : { display: "none" }}
@@ -43,7 +40,7 @@ const ButtonRow = props => {
         <div className="inputWrap">
           <button onClick={() => setThemes(!themes)} onFocus={() => void 0}>
             Themes
-          <img src={Arrow} alt="Arrow" />
+            <img src={Arrow} alt="Arrow" />
           </button>
           <ul
             style={themes ? { display: "block" } : { display: "none" }}
@@ -64,7 +61,7 @@ const ButtonRow = props => {
         <div className="inputWrap">
           <button onClick={() => setHq(!hq)} onFocus={() => void 0}>
             Headquarters
-          <img src={Arrow} alt="Arrow" />
+            <img src={Arrow} alt="Arrow" />
           </button>
           <ul
             style={hq ? { display: "block" } : { display: "none" }}
@@ -86,7 +83,7 @@ const ButtonRow = props => {
         <div className="inputWrap">
           <button onClick={() => setTypes(!types)} onFocus={() => void 0}>
             Organization Type
-                      <img src={Arrow} alt="Arrow" />
+            <img src={Arrow} alt="Arrow" />
           </button>
           <ul
             style={types ? { display: "block" } : { display: "none" }}
@@ -104,16 +101,16 @@ const ButtonRow = props => {
             })}
           </ul>
         </div>
-
       </div>
       <span className="search__query">
-        <h3>
+        <h3 className="reset__button">
           <button onClick={props.clickReset}>
             <img src={reset} alt="reset button" height="20" width="20" />
           </button>{" "}
-          Search query:
+          Search query: <h5>{props.query}</h5>
         </h3>
-        {props.query}
+
+        <SearchButton clicked={props._clicked} />
       </span>
     </div>
   )

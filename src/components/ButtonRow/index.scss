@@ -15,20 +15,28 @@
   }
   .search__query {
     margin-left: 6rem;
-
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    button {
-      background-color: #ffffff;
-      border: none;
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+
+    .reset__button {
+      button {
+        background-color: #ffffff;
+        border: none;
+      }
     }
     img {
       margin-bottom: -0.2rem;
     }
     h3 {
       display: inline-block;
-      border-bottom: 0.4rem solid variables.$skyBlue;
-      padding-bottom: 0.6rem;
+      line-height: 4rem;
       margin-right: 1rem;
+    }
+    h5 {
+      display: inline-block;
+      border-bottom: none;
     }
   }
 }
