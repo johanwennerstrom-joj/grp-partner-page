@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import "./index.scss"
 import Sort from "../../data/sort.json"
 import Input from "./input"
+import Arrow from "./arrow.svg"
 import SearchButton from "../SearchButton/index"
 import reset from "../../images/reset.png"
 
@@ -12,6 +13,7 @@ const ButtonRow = props => {
   const [types, setTypes] = useState(false)
 
   return (
+
     <div className="wrap">
       <h2 className="filter__heading">Find a Partner</h2>
 
@@ -20,6 +22,7 @@ const ButtonRow = props => {
         <div className="inputWrap">
           <button onClick={() => setWorkReg(!workReg)} onFocus={() => void 0}>
             Working Region
+                      <img src={Arrow} alt="Arrow" />
           </button>
           <ul
             style={workReg ? { display: "block" } : { display: "none" }}
@@ -40,6 +43,7 @@ const ButtonRow = props => {
         <div className="inputWrap">
           <button onClick={() => setThemes(!themes)} onFocus={() => void 0}>
             Themes
+          <img src={Arrow} alt="Arrow" />
           </button>
           <ul
             style={themes ? { display: "block" } : { display: "none" }}
@@ -60,6 +64,7 @@ const ButtonRow = props => {
         <div className="inputWrap">
           <button onClick={() => setHq(!hq)} onFocus={() => void 0}>
             Headquarters
+          <img src={Arrow} alt="Arrow" />
           </button>
           <ul
             style={hq ? { display: "block" } : { display: "none" }}
@@ -81,6 +86,7 @@ const ButtonRow = props => {
         <div className="inputWrap">
           <button onClick={() => setTypes(!types)} onFocus={() => void 0}>
             Organization Type
+                      <img src={Arrow} alt="Arrow" />
           </button>
           <ul
             style={types ? { display: "block" } : { display: "none" }}
@@ -98,6 +104,7 @@ const ButtonRow = props => {
             })}
           </ul>
         </div>
+
       </div>
       <span className="search__query">
         <h3>

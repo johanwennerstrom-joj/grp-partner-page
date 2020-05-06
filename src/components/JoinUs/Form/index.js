@@ -16,21 +16,19 @@ const Form = () => {
             <option value="Asia">Asia</option>
             <option value="Europe">Europe</option>
             <option value="Africa">Africa</option>
-            <option value="SouthAmerica">SouthAmerica</option>
-            <option value="NorthAmerica">NorthAmerica</option>
-            <option value="Australia">Australia</option>
+            <option value="Middle East">Middle East</option>
+            <option value="Global">Global</option>
           </select>
         </label>
         <label>
           Working Region:
-          <select id="area" name="area">
-            <option value="Area"></option>
+          <select id="Working Region" name="Working Region">
+            <option value="Working Region"></option>
             <option value="Asia">Asia</option>
             <option value="Europe">Europe</option>
             <option value="Africa">Africa</option>
-            <option value="SouthAmerica">SouthAmerica</option>
-            <option value="NorthAmerica">NorthAmerica</option>
-            <option value="Australia">Australia</option>
+            <option value="Middle East">Middle East</option>
+            <option value="Global">Global</option>
           </select>
         </label>
         <label>
