@@ -7,6 +7,7 @@ const JoinUsBody = () => {
       <div className="wrapper">
         <div className="textcontainer">
           <h1>Interested in Joining Us?</h1>
+          <br></br>
           <p>
             GRP’s offer to its partners is to improve the impact of public and
             private investment in resilience, advance the case for resilience to
@@ -14,13 +15,16 @@ const JoinUsBody = () => {
             identify opportunities to increase private sector involvement in
             resilience.
           </p>
+          <br></br>
           <p>
             GRP invites organisations that agree GRP’s vision, mission and
             objectives to become partners and to commit to working together to
             share knowledge, identify opportunities around resilience
             investments, highlight effective action, and support GRP.
           </p>
+          <br></br>
           <h2>Join the Global Resilience Partnership</h2>
+          <br></br>
           <p>
             Organisations who share GRP’s ambition and the notion that
             resilience underpins the achievement of sustainable development in a

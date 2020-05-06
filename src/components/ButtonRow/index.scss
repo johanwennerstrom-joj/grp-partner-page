@@ -20,7 +20,7 @@
     margin: 0 1.2rem 0 0;
   }
   .inputWrap {
-    // display: flex;
+    display: block;
     justify-content: center;
     margin: 0 1.6rem 0 1.6rem;
   }
@@ -42,14 +42,23 @@
     min-width: 17.925rem;
     width: -moz-fit-content;
     width: -webkit-fit-content;
-    // height: -moz-fit-content;
-    // height: -webkit-fit-content;
     height: 200px;
     overflow-y: hidden;
     overflow-y: scroll;
+    display: block;
+    position: absolute;
 
     li {
       text-decoration: none;
     }
+  }
+
+  img {
+    display: inline;
+    position: relative;
+    left: 10px;
+    top: 6px;
+    width: 20px;
+    height: 20px;
   }
 }
