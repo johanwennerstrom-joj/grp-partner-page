@@ -5,13 +5,13 @@
 .wrap {
   margin-top: 10rem;
   margin-bottom: 4rem;
-  .find__partner {
+  .filter__heading {
+    @include typography.section-heading;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     font-weight: bold;
     margin-left: 8rem;
     margin-bottom: 4rem;
-    padding-left: 1rem;
-    border-left: 0.8rem solid variables.$skyBlue;
+    font-size: 2rem;
   }
   .search__query {
     margin-left: 6rem;
