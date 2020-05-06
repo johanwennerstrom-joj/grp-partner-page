@@ -56,7 +56,12 @@ const IndexPage = e => {
   return (
     <Layout>
       <SEO title="Home" />
-      <ButtonRow changed={handleChange} _clicked={handleClick} query={query} />
+      <ButtonRow
+        changed={handleChange}
+        _clicked={handleClick}
+        query={query}
+        clickReset={handleReset}
+      />
       {/* <SearchButton clicked={handleClick} clickReset={handleReset} /> */}
 
       <CardContainer>

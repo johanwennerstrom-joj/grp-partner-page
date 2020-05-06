@@ -6,7 +6,7 @@ const SearchButton = props => {
   return (
     <div className="btn-wrap">
       <button className="searchButton" onClick={props.clicked}>
-        <img src={search} alt="search button" height="30" width="30" />
+        <img src={search} alt="search button" height="30" width="30"></img>
       </button>
     </div>
   )

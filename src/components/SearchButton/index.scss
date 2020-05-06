@@ -3,14 +3,11 @@
 @use "../../global/variables";
 
 .btn-wrap {
-  margin-bottom: 4rem;
-  width: 3rem;
+  margin-left: 2rem;
+  img {
+    margin-bottom: -2rem;
+  }
   button {
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    font-size: 1.2rem;
-    font-weight: bold;
-    padding: 0.6rem 2.8rem 0.6rem 2.8rem;
-    border-radius: 1rem;
     border: none;
   }
 }

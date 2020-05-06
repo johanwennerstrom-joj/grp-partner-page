@@ -17,6 +17,13 @@
     margin-left: 6rem;
 
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    button {
+      background-color: #ffffff;
+      border: none;
+    }
+    img {
+      margin-bottom: -0.2rem;
+    }
     h3 {
       display: inline-block;
       border-bottom: 0.4rem solid variables.$skyBlue;
@@ -50,20 +57,20 @@
     border-radius: 1rem;
   }
 
-  button {
-    height: 4rem;
-    width: 14rem;
-    text-align: center;
-    border: none;
-    font-weight: bold;
-    font-size: 1rem;
-    margin: 0 2rem 0 2rem;
-    background-color: #ffffff;
-  }
   .inputWrap {
     // display: flex;
     justify-content: center;
     margin: 0 1.6rem 0 1.6rem;
+    button {
+      height: 4rem;
+      width: 14rem;
+      text-align: center;
+      border: none;
+      font-weight: bold;
+      font-size: 1rem;
+      margin: 0 2rem 0 2rem;
+      background-color: #ffffff;
+    }
   }
 
   label {
