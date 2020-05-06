@@ -9,6 +9,7 @@ import SEO from "../components/seo"
 import PartnerCard from "../components/PartnerCard/index"
 import CardContainer from "../components/CardContainer/index"
 import ButtonRow from "../components/ButtonRow/index"
+import SearchButton from "../components/SearchButton/index"
 
 const IndexPage = e => {
   // Destructuring JSON data
@@ -43,16 +44,21 @@ const IndexPage = e => {
       e.preventDefault()
       return filter(partners)
     } catch (error) {
-      console.log("error")
+      console.log(error)
     }
   }
-
-  console.log(filtered)
+  const handleReset = () => {
+    setSort("")
+    setQuery("")
+    setFiltered(partners)
+  }
 
   return (
     <Layout>
       <SEO title="Home" />
-      <ButtonRow changed={handleChange} buttonClick={handleClick} />
+      <ButtonRow changed={handleChange} />
+      <SearchButton clicked={handleClick} clickReset={handleReset} />
+
       <span>{query}</span>
       <CardContainer>
         {filtered === " "
@@ -66,7 +72,7 @@ const IndexPage = e => {
                   hq={partner.hq}
                   workingRegion={partner.workingRegion}
                   website={partner.website}
-                  key={partner.id}
+                  key={partner._id}
                 />
               )
             })
@@ -80,7 +86,7 @@ const IndexPage = e => {
                   hq={partner.hq}
                   workingRegion={partner.workingRegion}
                   website={partner.website}
-                  key={partner.id}
+                  key={partner._id}
                 />
               )
             })}

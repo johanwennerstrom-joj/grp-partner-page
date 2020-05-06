@@ -1,0 +1,48 @@
+@import "../../global/variables.scss";
+
+
+   
+    hr {
+        border-top: 1px solid $skyBlue;
+        
+    }
+   
+
+.footer__logos {
+    display: grid;
+    padding: 45px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+    align-items: center;
+    text-align: center;
+}
+
+
+.footer__contact {
+    font-family: franklin-gothic-condensed, sans-serif;
+    font-size: 0.9rem;
+    display: grid;
+    padding: 45px;
+    grid-template-columns: 2fr 6fr;
+    grid-auto-rows: auto;
+    align-items: center;
+    text-align: center;
+}
+
+.footer__contact {
+    :nth-child(1) {
+    
+    }
+}
+.footer__contact {
+    a {
+    text-decoration: none;
+    color: $skyBlue;
+    }
+}
+
+.footer__contact {
+    a:hover {
+    color: $forestGreen;
+    }
+}

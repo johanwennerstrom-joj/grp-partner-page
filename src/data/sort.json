@@ -1,0 +1,175 @@
+{
+  "workingRegion": [
+    {
+      "value": ["workingRegion", "Africa"]
+    },
+    {
+      "value": ["workingRegion", "Asia"]
+    },
+    {
+      "value": ["workingRegion", "Europe"]
+    },
+    {
+      "value": ["workingRegion", "Middle East"]
+    },
+    {
+      "value": ["workingRegion", "Global"]
+    }
+  ],
+  "themes": [
+    {
+      "value": ["themes", "Private sector and investment"]
+    },
+    {
+      "value": ["themes", "Disaster risk reduction"]
+    },
+    {
+      "value": ["themes", "Innovation and scaling"]
+    },
+    {
+      "value": ["themes", "Food and water security"]
+    },
+    {
+      "value": ["themes", "Information and technology"]
+    },
+    {
+      "value": ["themes", "finance and markets"]
+    },
+    {
+      "value": ["themes", "capacity building"]
+    },
+    {
+      "value": ["themes", "poverty alleviation"]
+    },
+    {
+      "value": ["themes", "Climate change adaptation"]
+    },
+    {
+      "value": ["themes", "knowledge and learning"]
+    },
+    {
+      "value": ["themes", "Research and science"]
+    },
+    {
+      "value": ["themes", "crosscutting"]
+    },
+    {
+      "value": ["themes", "livelihoods"]
+    },
+    {
+      "value": ["themes", "Empowering marginalized groups"]
+    },
+    {
+      "value": ["themes", "gender"]
+    },
+    {
+      "value": ["themes", "peace and conflict "]
+    },
+    {
+      "value": ["themes", "climate change adapatation"]
+    },
+    {
+      "value": ["themes", "infrastructure"]
+    },
+    {
+      "value": ["themes", "nature based solutions"]
+    },
+    {
+      "value": ["themes", "ocean"]
+    }
+  ],
+  "hq": [
+    {
+      "value": ["hq", "Switzerland"]
+    },
+    {
+      "value": ["hq", "Kenya"]
+    },
+    {
+      "value": ["hq", "United Kingdom"]
+    },
+    {
+      "value": ["hq", "United States of America"]
+    },
+    {
+      "value": ["hq", "Democratic Reupublic of Congo"]
+    },
+    {
+      "value": ["hq", "South Africa"]
+    },
+    {
+      "value": ["hq", "Burkinafaso"]
+    },
+    {
+      "value": ["hq", "Bangladesh"]
+    },
+    {
+      "value": ["hq", "Global"]
+    },
+    {
+      "value": ["hq", "Canada"]
+    },
+    {
+      "value": ["hq", "Djibouti"]
+    },
+    {
+      "value": ["hq", "India"]
+    },
+    {
+      "value": ["hq", "Ethiopia"]
+    },
+    {
+      "value": ["hq", "Netherlands"]
+    },
+    {
+      "value": ["hq", "Germany"]
+    },
+    {
+      "value": ["hq", "Bangkok"]
+    },
+    {
+      "value": ["hq", "Indonesia"]
+    },
+    {
+      "value": ["hq", "Sweden"]
+    },
+    {
+      "value": ["hq", "Online Platform"]
+    }
+  ],
+  "types": [
+    {
+      "value": ["type", "Private Sector"]
+    },
+    {
+      "value": ["type", "Knowledge & Think Tank"]
+    },
+    {
+      "value": ["type", "Int NGO"]
+    },
+    {
+      "value": ["type", "Grantee"]
+    },
+    {
+      "value": ["type", "Regional Agencies"]
+    },
+    {
+      "value": ["type", "Bilateral Agency"]
+    },
+    {
+      "value": ["type", "Regional NGO"]
+    },
+    {
+      "value": ["type", "Multilateral Agency"]
+    },
+    {
+      "value": ["type", "Alliance"]
+    },
+    {
+      "value": ["type", "Local NGO"]
+    },
+    {
+      "value": ["type", "UN Agency"]
+    }
+  ]
+}
