@@ -1,3 +1,4 @@
+@use "../../src/styles/variables";
 @import url("https://use.typekit.net/gsy5vob.css");
 
 $bodyText: Arial, Helvetica, sans-serif;
@@ -26,6 +27,10 @@ $smallTitle: "franklin-gothic-condensed", "Franklin Gothic Medium", "Segoe UI",
   line-height: 1;
 }
 
+@mixin section-heading {
+  padding-left: 0.5rem;
+  border-left: 7px solid variables.$skyBlue;
+}
 // these are the fonts we will use in the project. Franklin Gothic Book Compressed for the larger body text. And the Condensed version for titles. I will clean up this file!
 
 // franklin-gothic-compressed, sans-serif
