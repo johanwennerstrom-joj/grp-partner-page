@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import "./index.scss"
 
 const PartnerCard = props => {
@@ -14,7 +13,7 @@ const PartnerCard = props => {
             alt={props.alt}
           />
         </div>
-        <h3 className="card__title">{props.organisation}</h3>
+        <h3>{props.organisation}</h3>
         <p>
           <span className="card__title">Type:</span> {props.type}
         </p>
