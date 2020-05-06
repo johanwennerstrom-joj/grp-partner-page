@@ -4,6 +4,13 @@
 
 .wrap {
   margin-top: 10rem;
+  .find__partner {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-weight: bold;
+    margin-left: 8rem;
+    padding-left: 1rem;
+    border-left: 0.8rem solid variables.$skyBlue;
+  }
 }
 .main__container {
   * {
@@ -15,10 +22,19 @@
   height: 20rem;
   margin-top: 6rem;
 
-  .find__partner {
-    h1 {
-      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    }
+  ::-webkit-scrollbar {
+    width: 0.8rem;
+    height: 80%;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 1rem;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: variables.$skyBlue;
+    border-radius: 1rem;
   }
 
   button {
@@ -58,6 +74,7 @@
     // height: -moz-fit-content;
     // height: -webkit-fit-content;
     height: 200px;
+
     overflow-y: hidden;
     overflow-y: scroll;
 
