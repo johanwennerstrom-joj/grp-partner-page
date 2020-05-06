@@ -13,7 +13,7 @@ const ButtonRow = props => {
 
   return (
     <div className="wrap">
-      <h1 className="find__partner">Find a Partner</h1>
+      <h2 className="filter__heading">Find a Partner</h2>
 
       <div className="main__container">
         <SearchButton clicked={props._clicked} />

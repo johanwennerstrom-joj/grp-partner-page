@@ -29,7 +29,7 @@ const PartnerCard = props => {
             {props.workingRegion}
           </p>
           <a href={props.website} target="_blank" rel="noopener noreferrer">
-            <span className="card__title">WEBSITE</span>
+            Home page
           </a>
         </div>
       </article>
