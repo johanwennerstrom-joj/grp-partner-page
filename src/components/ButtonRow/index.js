@@ -18,8 +18,13 @@ const ButtonRow = props => {
       <div className="main__container">
         <SearchButton clicked={props._clicked} />
         <div className="inputWrap">
-          <button onClick={() => setWorkReg(!workReg)}>Working Region</button>
-          <ul style={workReg ? { display: "block" } : { display: "none" }}>
+          <button onClick={() => setWorkReg(!workReg)} onFocus={() => void 0}>
+            Working Region
+          </button>
+          <ul
+            style={workReg ? { display: "block" } : { display: "none" }}
+            onMouseLeave={() => setWorkReg(!workReg)}
+          >
             {Sort.workingRegion.map(input => {
               return (
                 <Input
@@ -33,8 +38,13 @@ const ButtonRow = props => {
           </ul>
         </div>
         <div className="inputWrap">
-          <button onClick={() => setThemes(!themes)}>Themes</button>
-          <ul style={themes ? { display: "block" } : { display: "none" }}>
+          <button onClick={() => setThemes(!themes)} onFocus={() => void 0}>
+            Themes
+          </button>
+          <ul
+            style={themes ? { display: "block" } : { display: "none" }}
+            onMouseLeave={() => setThemes(!themes)}
+          >
             {Sort.themes.map(input => {
               return (
                 <Input
@@ -48,8 +58,13 @@ const ButtonRow = props => {
           </ul>
         </div>
         <div className="inputWrap">
-          <button onClick={() => setHq(!hq)}>Headquarters</button>
-          <ul style={hq ? { display: "block" } : { display: "none" }}>
+          <button onClick={() => setHq(!hq)} onFocus={() => void 0}>
+            Headquarters
+          </button>
+          <ul
+            style={hq ? { display: "block" } : { display: "none" }}
+            onMouseLeave={() => setHq(!hq)}
+          >
             {Sort.hq.map(input => {
               return (
                 <Input
@@ -57,14 +72,20 @@ const ButtonRow = props => {
                   change={props.changed}
                   display={input.value[1]}
                   key={input.value.indexOf() * Math.random()}
+                  _clicked
                 />
               )
             })}
           </ul>
         </div>
         <div className="inputWrap">
-          <button onClick={() => setTypes(!types)}>Organization Type</button>
-          <ul style={types ? { display: "block" } : { display: "none" }}>
+          <button onClick={() => setTypes(!types)} onFocus={() => void 0}>
+            Organization Type
+          </button>
+          <ul
+            style={types ? { display: "block" } : { display: "none" }}
+            onMouseLeave={() => setTypes(!types)}
+          >
             {Sort.types.map(input => {
               return (
                 <Input
