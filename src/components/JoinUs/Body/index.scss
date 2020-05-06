@@ -6,25 +6,21 @@
 
 .textcontainer {
   padding-left: 12rem;
-  width: 36rem;
-  // display: inline-block;
+  padding-top: 6rem;
+  width: 55rem;
+  height: max-content;
 }
 
 .imagecontainer {
-  // clip-path: inset(0 18% 0 31%);
   width: 400px;
   background-color: aqua;
   height: 900px;
   overflow: hidden;
-  // height: auto;
-  // display: inline-block;
-  // position: relative;
-  // left: 200px;
-  // bottom: 500px;
+  margin-top: 6rem;
 }
 
 #childrenimage {
-  max-height: 100%;
-  position: relative;
-  right: 700px;
+  object-fit: cover;
+  min-width: 100%;
+  min-height: 100%;
 }

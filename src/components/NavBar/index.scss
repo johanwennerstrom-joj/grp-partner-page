@@ -1,4 +1,4 @@
-@import "../../global/variables.scss";
+@use "../../styles/variables.scss";
 
 
 .container {
@@ -45,7 +45,7 @@
   li {
     a {
       text-decoration: none;
-      color: $skyBlue;
+      color: variables.$skyBlue;
     }
   }
 }
@@ -53,7 +53,7 @@
 .container {
   li {
     a:hover {
-      color: $forestGreen;
+      color: variables.$forestGreen;
     }
   }
 }
