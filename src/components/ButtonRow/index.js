@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import "./index.scss"
 import Sort from "../../data/sort.json"
 import Input from "./input"
