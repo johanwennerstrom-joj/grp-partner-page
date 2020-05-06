@@ -10,13 +10,12 @@ select {
 
 form {
   width: 300px;
-  //   padding-left: 12rem;
 }
 
 .formcontainer {
   width: 500px;
   height: 450px;
-  // background-color: #0071b8;
+
   background-color: #c1d9d3;
   padding: 40px 90px;
   border-radius: 10%;
@@ -25,20 +24,11 @@ form {
   bottom: 450px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 1.1rem;
-  // color: white;
 }
 
 #interestbox {
   height: 100px;
 }
-
-// padding: 12px 20px;
-// margin: 8px 0;
-// display: inline-block;
-// border: 1px solid #ccc;
-// border-radius: 4px;
-// box-sizing: border-box;
-// }
 
 input[type="submit"] {
   text-decoration: none;
@@ -48,6 +38,6 @@ input[type="submit"] {
   padding: 10px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
-  // padding: 1.3rem 2rem 1.3rem 2rem;
+
   border-radius: 0.8rem;
 }
