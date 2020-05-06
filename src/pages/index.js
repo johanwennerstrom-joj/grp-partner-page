@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 
 // Data
 import Data from "../data/partners.json"
@@ -56,10 +56,14 @@ const IndexPage = e => {
   return (
     <Layout>
       <SEO title="Home" />
-      <ButtonRow changed={handleChange} />
-      <SearchButton clicked={handleClick} clickReset={handleReset} />
+      <ButtonRow
+        changed={handleChange}
+        _clicked={handleClick}
+        query={query}
+        clickReset={handleReset}
+      />
+      {/* <SearchButton clicked={handleClick} clickReset={handleReset} /> */}
 
-      <span>{query}</span>
       <CardContainer>
         {filtered === " "
           ? partners.map(partner => {

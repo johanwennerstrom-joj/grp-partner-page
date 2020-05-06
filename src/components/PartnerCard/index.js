@@ -7,7 +7,7 @@ const PartnerCard = props => {
       <article className="card">
         <div className="card__img--wrapper">
           <img
-            alt={" "}
+            alt={"Logo"}
             className="card__logo"
             loading="lazy"
             src={props.image}
@@ -29,7 +29,7 @@ const PartnerCard = props => {
             {props.workingRegion}
           </p>
           <a href={props.website} target="_blank" rel="noopener noreferrer">
-            <span className="card__title">WEBSITE</span>
+            Home page
           </a>
         </div>
       </article>

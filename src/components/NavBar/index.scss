@@ -1,20 +1,40 @@
-@import "../../global/variables.scss";
+@use "../../styles/variables.scss";
+
 
 .container {
   font-family: franklin-gothic-condensed, sans-serif;
   font-size: 1.3rem;
   padding: 0;
+  font-weight: bold;
+  box-shadow: 0px 4px 4px #cecece;
 }
 
 .container {
-  ul {
-    display: grid;
-    grid-template-columns: 3fr 1fr 1fr 1fr 0.8fr 0.7fr 1.1fr 2fr;
-    grid-auto-rows: auto;
+   ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     align-items: center;
-    text-align: center;
+    padding: 0.5rem 2rem;
+    margin: 0.2rem 3rem;
   }
 }
+
+.container {
+  img {
+    margin: 1.5rem 0 1.5rem 0;
+}
+}
+// .container {
+//   ul {
+//     display: grid;
+//     grid-template-columns: 3fr 1fr 1fr 1fr 0.8fr 0.7fr 1.1fr 2fr;
+//     grid-auto-rows: auto;
+//     align-items: center;
+//     text-align: center;
+//     margin-left: 4rem;
+//   }
+// }
 
 .container {
   ul {
@@ -25,7 +45,7 @@
   li {
     a {
       text-decoration: none;
-      color: $skyBlue;
+      color: variables.$skyBlue;
     }
   }
 }
@@ -33,11 +53,7 @@
 .container {
   li {
     a:hover {
-      color: $forestGreen;
+      color: variables.$forestGreen;
     }
   }
-}
-
-.socialmedia {
-  padding-right: 45px;
 }
