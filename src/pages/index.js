@@ -56,40 +56,44 @@ const IndexPage = e => {
   return (
     <Layout>
       <SEO title="Home" />
-      <ButtonRow changed={handleChange} />
-      <SearchButton clicked={handleClick} clickReset={handleReset} />
+      <ButtonRow
+        changed={handleChange}
+        _clicked={handleClick}
+        query={query}
+        clickReset={handleReset}
+      />
+      {/* <SearchButton clicked={handleClick} clickReset={handleReset} /> */}
 
-      <span>{query}</span>
       <CardContainer>
         {filtered === " "
           ? partners.map(partner => {
-            return (
-              <PartnerCard
-                image={partner.image}
-                organisation={partner.organisation}
-                type={partner.type}
-                theme={partner.themes}
-                hq={partner.hq}
-                workingRegion={partner.workingRegion}
-                website={partner.website}
-                key={partner._id}
-              />
-            )
-          })
+              return (
+                <PartnerCard
+                  image={partner.image}
+                  organisation={partner.organisation}
+                  type={partner.type}
+                  theme={partner.themes}
+                  hq={partner.hq}
+                  workingRegion={partner.workingRegion}
+                  website={partner.website}
+                  key={partner._id}
+                />
+              )
+            })
           : filtered.map(partner => {
-            return (
-              <PartnerCard
-                image={partner.image}
-                organisation={partner.organisation}
-                type={partner.type}
-                theme={partner.themes}
-                hq={partner.hq}
-                workingRegion={partner.workingRegion}
-                website={partner.website}
-                key={partner._id}
-              />
-            )
-          })}
+              return (
+                <PartnerCard
+                  image={partner.image}
+                  organisation={partner.organisation}
+                  type={partner.type}
+                  theme={partner.themes}
+                  hq={partner.hq}
+                  workingRegion={partner.workingRegion}
+                  website={partner.website}
+                  key={partner._id}
+                />
+              )
+            })}
       </CardContainer>
     </Layout>
   )

@@ -1,9 +1,9 @@
-@import "../../global/variables.scss";
- 
+@use "../../styles/variables.scss";
+
 hr {
-    border-top: 1px solid $skyBlue; 
+  border-top: 1px solid variables.$skyBlue;
 }
-   
+
 .footer__logos {
     display: flex;
     justify-content: space-evenly;
@@ -30,18 +30,19 @@ hr {
     font-size: 1.1rem;
     margin: 2rem;
     padding: 3rem;
+    font-weight: bold;
 }
 
 
 .footer__contact {
-    a {
+  a {
     text-decoration: none;
-    color: $skyBlue;
-    }
+    color: variables.$skyBlue;
+  }
 }
 
 .footer__contact {
-    a:hover {
-    color: $forestGreen;
-    }
+  a:hover {
+    color: variables.$forestGreen;
+  }
 }

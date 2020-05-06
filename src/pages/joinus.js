@@ -11,7 +11,7 @@ const JoinUs = () => {
     <>
       <NavBar />
       <JoinUsBody />
-      <Form />
+      {/* <Form /> */}
       <Footer />
     </>
   )
