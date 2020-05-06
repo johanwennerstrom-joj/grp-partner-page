@@ -2,6 +2,9 @@
 @use "../../global/typography";
 @use "../../global/variables";
 
+.wrap {
+  margin-top: 10rem;
+}
 .main__container {
   * {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -11,6 +14,12 @@
   justify-content: center;
   height: 20rem;
   margin-top: 6rem;
+
+  .find__partner {
+    h1 {
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    }
+  }
 
   button {
     height: 4rem;
@@ -32,11 +41,11 @@
   }
 
   ul {
+    opacity: 0.9;
     list-style: none;
     background-color: #000000;
-    border: solid 1.5rem rgba(#000, 0.2);
-    box-shadow: 0.6rem 0.6rem 4rem variables.$rockGray;
-    border-radius: 1rem;
+    box-shadow: 0.6rem 0.8rem 2rem variables.$rockGray;
+    border-radius: 0.8rem;
     padding-top: 0.8rem;
     padding-right: 0.8rem;
     color: white;
@@ -54,6 +63,7 @@
 
     li {
       text-decoration: none;
+      letter-spacing: 0.06rem;
     }
   }
 }
