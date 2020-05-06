@@ -16,9 +16,9 @@ const Footer = () => {
                 >
                     <img
                         src="https://res.cloudinary.com/mojojawn/image/upload/v1588247702/grp_partners/Horizontal_RGB_294_tret23.png"
-                        height="90"
-                        width="180"
-                        alt=" "
+                        height="65"
+                        width="130"
+                        alt="US Aid Logo"
                     />
                 </a>
 
@@ -29,9 +29,9 @@ const Footer = () => {
                 >
                     <img
                         src={SWElogo}
-                        height="80"
-                        width="185"
-                        alt=" "
+                        height="58"
+                        width="135"
+                        alt="Sida Logo"
                     />
                 </a>
 
@@ -42,9 +42,9 @@ const Footer = () => {
                 >
                     <img
                         src="https://res.cloudinary.com/mojojawn/image/upload/v1587994491/grp_partners/Zurich_stac_R_rgb_tbdhmr.png"
-                        height="80"
-                        width="130"
-                        alt=" "
+                        height="58"
+                        width="94"
+                        alt="Zurich Foundation Logo"
                     />
                 </a>
                 <a
@@ -54,9 +54,9 @@ const Footer = () => {
                 >
                     <img
                         src={UKaidlogo}
-                        height="90"
-                        width="100"
-                        alt=" "
+                        height="65"
+                        width="72"
+                        alt="UK aid Logo"
                     />
                 </a>
             </div>

@@ -11,7 +11,7 @@ const NavBar = () => {
         <div className="container">
           <ul>
             <div className="logo">
-              <img src={Logo} alt=" " width="120" height="55" alt=" " />
+              <img src={Logo} alt=" " width="120" height="55" alt="Global Resilience Partnership Logo" />
             </div>
             <li>
               <Link to="/404">About Us </Link>
@@ -32,7 +32,7 @@ const NavBar = () => {
               <Link to="/404">Resources </Link>
             </li>
             <div className="socialmedia">
-              <img src={Socialmedia} width="138" height="40" alt=" " />
+              <img src={Socialmedia} width="138" height="40" alt="Social media logos" />
             </div>
           </ul>
         </div>
