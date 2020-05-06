@@ -2,6 +2,8 @@ import React, { useState } from "react"
 import "./index.scss"
 import Sort from "../../data/sort.json"
 import Input from "./input"
+import SearchButton from "../SearchButton/index"
+import reset from "../../images/reset.png"
 
 const ButtonRow = props => {
   const [workReg, setWorkReg] = useState(false)
@@ -12,7 +14,9 @@ const ButtonRow = props => {
   return (
     <div className="wrap">
       <h1 className="find__partner">Find a Partner</h1>
+
       <div className="main__container">
+        <SearchButton clicked={props._clicked} />
         <div className="inputWrap">
           <button onClick={() => setWorkReg(!workReg)}>Working Region</button>
           <ul style={workReg ? { display: "block" } : { display: "none" }}>
@@ -74,6 +78,15 @@ const ButtonRow = props => {
           </ul>
         </div>
       </div>
+      <span className="search__query">
+        <h3>
+          <button onClick={props.clickReset}>
+            <img src={reset} alt="reset button" height="20" width="20" />
+          </button>{" "}
+          Search query:
+        </h3>
+        {props.query}
+      </span>
     </div>
   )
 }
