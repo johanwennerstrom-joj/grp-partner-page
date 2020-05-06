@@ -7,7 +7,7 @@ const PartnerCard = props => {
       <article className="card">
         <div className="card__img--wrapper">
           <img
-            alt={" "}
+            alt={"Logo"}
             className="card__logo"
             loading="lazy"
             src={props.image}
