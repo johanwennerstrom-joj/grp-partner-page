@@ -14,22 +14,22 @@ const NavBar = () => {
               <img src={Logo} alt=" " width="120" height="55" alt="Global Resilience Partnership Logo" />
             </div>
             <li>
-              <Link to="/404">About Us </Link>
+              <Link to="/404">About Us</Link>
             </li>
             <li>
-              <Link to="/joinus">Join Us! </Link>
+              <Link to="/joinus">Join Us!</Link>
             </li>
             <li>
-              <Link to="/404">Challenges </Link>
+              <Link to="/404">Challenges</Link>
             </li>
             <li>
-              <Link to="/404">News </Link>
+              <Link to="/404">News</Link>
             </li>
             <li>
-              <Link to="/404">Events </Link>
+              <Link to="/404">Events</Link>
             </li>
             <li>
-              <Link to="/404">Resources </Link>
+              <Link to="/404">Resources</Link>
             </li>
             <div className="socialmedia">
               <img src={Socialmedia} width="138" height="40" alt="Social media logos" />
