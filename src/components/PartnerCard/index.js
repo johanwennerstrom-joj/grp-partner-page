@@ -16,27 +16,16 @@ const PartnerCard = props => {
         <div className="card__content-container">
           <h3>{props.organisation}</h3>
           <p>
-            <span className="card__title">
-              <b>Type:</b>
-            </span>{" "}
-            {props.type}
+            <span className="card__title">Type:</span> {props.type}
           </p>
           <p>
-            <span className="card__title">
-              <b>Theme:</b>
-            </span>{" "}
-            {props.theme}
+            <span className="card__title">Theme:</span> {props.theme}
           </p>
           <p>
-            <span className="card__title">
-              <b>Headquarters:</b>
-            </span>{" "}
-            {props.hq}
+            <span className="card__title">Headquarters:</span> {props.hq}
           </p>
           <p>
-            <span className="card__title">
-              <b>Working Region:</b>
-            </span>{" "}
+            <span className="card__title">Working Region:</span>{" "}
             {props.workingRegion}
           </p>
           <a href={props.website} target="_blank" rel="noopener noreferrer">
