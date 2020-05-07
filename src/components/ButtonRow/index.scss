@@ -25,6 +25,15 @@
         border: none;
       }
     }
+
+    //hover effect
+
+    // .reset__button {
+    //   button:hover {
+    //     background-color: variables.$forestGreen;
+    //   }
+    // }
+
     img {
       margin-bottom: -0.2rem;
     }
@@ -46,6 +55,7 @@
   }
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   height: 20rem;
   margin-top: 6rem;
 
@@ -54,6 +64,17 @@
     height: 80%;
   }
 
+  button {
+    height: 4rem;
+    width: 17rem;
+    text-align: center;
+    border: none;
+    font-weight: bold;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 0 1.2rem 0 0;
+    background-color: #ffffff;
+  }
   ::-webkit-scrollbar-track {
     background: transparent;
     border-radius: 1rem;
@@ -79,6 +100,18 @@
       background-color: #ffffff;
     }
   }
+
+
+
+  .inputWrap {
+    button:hover {
+      color: #fff;
+      background-color: #000;
+      opacity: 0.9;
+    }
+    } 
+    
+    
 
   label {
     margin-left: 0.8rem;
