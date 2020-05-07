@@ -15,7 +15,6 @@ $smallTitle: "franklin-gothic-condensed", "Franklin Gothic Medium", "Segoe UI",
 @mixin small-title {
   font-family: $smallTitle;
   font-weight: 500;
-  // font-variant-caps: all-small-caps;
   line-height: 1;
   font-size: 1.3em;
 }

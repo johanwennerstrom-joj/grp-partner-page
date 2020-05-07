@@ -7,15 +7,14 @@
   margin-bottom: 4rem;
   .filter__heading {
     @include typography.section-heading;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    font-weight: bold;
+    font-family: "franklin-gothic-condensed", "Arial Bold", Arial, sans-serif;
     margin-left: 8rem;
     margin-bottom: 4rem;
     font-size: 2rem;
   }
   .search__query {
     margin-left: 6rem;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-family: typography.$smallTitle;
     display: flex;
     justify-content: space-between;
     width: 45%;
@@ -42,7 +41,7 @@
 }
 .main__container {
   * {
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-family: typography.$smallTitle;
     list-style: none;
   }
   display: flex;
@@ -70,12 +69,12 @@
     justify-content: center;
     margin: 0 1.6rem 0 1.6rem;
     button {
+      @include typography.card-categories;
       height: 4rem;
       width: 14rem;
       text-align: center;
       border: none;
-      font-weight: bold;
-      font-size: 1rem;
+      font-size: 1.4rem;
       margin: 0 2rem 0 2rem;
       background-color: #ffffff;
     }
