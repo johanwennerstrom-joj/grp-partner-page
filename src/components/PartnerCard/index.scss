@@ -17,7 +17,7 @@
     text-decoration-style: solid;
     text-decoration-thickness: 1px;
     text-decoration-skip-ink: none;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-family: typography.$bodyText;
     color: variables.$oceanBlue;
   }
   a:hover {
