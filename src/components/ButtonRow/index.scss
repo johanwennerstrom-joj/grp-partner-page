@@ -26,6 +26,15 @@
         border: none;
       }
     }
+
+    //hover effect
+
+    // .reset__button {
+    //   button:hover {
+    //     background-color: variables.$forestGreen;
+    //   }
+    // }
+
     img {
       margin-bottom: -0.2rem;
     }
@@ -47,6 +56,7 @@
   }
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   height: 20rem;
   margin-top: 6rem;
 
@@ -91,6 +101,18 @@
       background-color: #ffffff;
     }
   }
+
+
+
+  .inputWrap {
+    button:hover {
+      color: #fff;
+      background-color: #000;
+      opacity: 0.9;
+    }
+    } 
+    
+    
 
   label {
     margin-left: 0.8rem;
