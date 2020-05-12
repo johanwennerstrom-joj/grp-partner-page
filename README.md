@@ -7,11 +7,12 @@ For an assignment in Hyper Island's Frontend Developer course, we were given the
 ## Who worked on it?
 
 Team members included
-[Johan Wennerström ](https://github.com/johanwennerstrom-joj)
-[Quena Soruco ](https://github.com/quena)
-[Hamza Khan](https://github.com/hamzakhan0412)
-[Arlind Pestisha](https://github.com/ArlindPestisha)
-[David Herron](https://github.com/dvdherron)
+
+- [Johan Wennerström ](https://github.com/johanwennerstrom-joj)
+- [Quena Soruco ](https://github.com/quena)
+- [Hamza Khan](https://github.com/hamzakhan0412)
+- [Arlind Pestisha](https://github.com/ArlindPestisha)
+- [David Herron](https://github.com/dvdherron)
 
 ## How did we make it?
 
